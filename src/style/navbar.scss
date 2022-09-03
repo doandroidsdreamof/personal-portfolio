@@ -1,0 +1,52 @@
+/*      <nav>
+        <div class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list__text">Home</li>
+            <li class="navigation__list__text">Skills</li>
+            <li class="navigation__list__text">About</li>
+            <li class="navigation__list__text">Contact</li>
+          </ul>
+      </nav>
+    </div>
+*/
+
+    $Inter: 'Inter', sans-serif;
+    $cardColor: rgb(23, 23, 23);
+    $bgColor: rgb(20, 20, 20);
+    $blue: #2196f3;
+
+
+.navigation{
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+  &__flex{
+    display: flex;
+  }
+    &__list{
+        list-style: none;
+        color:white;
+        font-size: 16px;
+        font-family: $Inter;
+        gap: 3rem;
+        display: flex;
+        cursor:pointer;
+        &__text{
+            display: inline-block;
+            transition:  all 700ms ease-in-out;
+            &:hover{
+              color: rgb(33, 150, 243,0.70);
+
+            }
+      
+
+        }
+            
+    }
+
+    
+}

@@ -1,0 +1,371 @@
+$bgColor: rgb(20, 20, 20);
+$cardColor: rgb(23, 23, 23);
+$textColor: #757575;
+$Inter: "Inter", sans-serif;
+$yellow: #DFFB6D;
+$blue: #2196f3;
+
+
+/* //blur//
+$primary: 	hsla(204, 56%, 15%,1)
+$float: 2.25rem
+$cubic : cubic-bezier(1,.85,.23,1.52)
+$jump: cubic-bezier(.5,2,0,1)
+
+$inner : $jump
+
+
+@mixin blur($i)
+		backdrop-filter: blur($i + rem)
+		-webkit-backdrop-filter: blur($i + rem)
+
+
+					opacity: 0
+					transition: all 400ms ease-out
+					border-radius: .8rem
+					position: absolute
+					height: 15rem
+					width: 15rem
+					background: rgba(255,255,255,.2)
+					@include blur(.4)
+					z-index: 0
+					top: 0
+					@include flex(center,center,row)
+
+
+          */
+.projects{
+width: 100%;
+place-items: center;
+scroll-snap-align: center;
+user-select: none;
+margin-bottom: auto;
+padding: 0rem 15rem;
+background-color: rgb(0,0,0,0.60);
+
+}
+.live{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 40%;
+  top:30%;
+  width: 45px;
+  height: 45px;
+  z-index: 4;
+  display: none;
+  color:white;
+  margin-right: auto;
+
+
+
+
+  
+}
+.projects__card {
+  //border: 2px solid white;
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  //border:1px solid white;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4rem;
+  margin-bottom:auto;
+  padding: 5rem 0rem;
+  
+  &__card__head{
+  
+  }
+  
+
+  &__container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    min-height: 40%;
+    overflow: hidden;
+    min-width: 100%;
+      
+  }
+  &__content{
+    background-color: $bgColor;
+    border-radius: inherit;
+    margin: 1px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding: 2rem;
+    object-fit: cover;
+    height: 16rem;
+ 
+
+  } 
+  &__texts{
+    color: rgb(240, 240, 240);
+    text-align: left;
+    padding: 1.60rem 0.20rem;
+    font-weight: 500;
+    font-family: $Inter;
+
+
+
+  }
+  &__header{
+    font-size: 14px
+    
+  }
+  &__image{
+    align-items: center;
+    border-radius: inherit;
+    height: 12rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    opacity: 0.7;
+    border-radius: 2px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    &:hover{
+      -webkit-filter: blur(7px);
+      filter: blur(7px);
+      opacity: 0.5;
+  
+
+ 
+    }
+ 
+
+    //border:red 1px solid;
+  }
+  &__info{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 12px;
+     
+  }
+
+}
+
+
+// Light effect
+.projects__card__container:hover::before {
+  opacity: 1;
+}
+
+.projects__card__container::before {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+  margin-top: auto;
+
+}
+
+ .projects__card__container::before  {
+  background: radial-gradient(
+    800px circle at var(--horizontical) var(--vertical), 
+    $blue,    
+    rgba(217,0,255,0.1),
+    transparent 30%
+  );
+  z-index: 2;
+
+}
+
+.projects__card__container::after{
+  background: radial-gradient(
+    800px circle at var(--horizontical) var(--vertical), 
+    /*rgba(33,150,243,0.9),*/
+    $blue,    
+    rgba(217,0,255,0.1),
+
+    transparent 30%
+    
+  );
+  z-index: 4;
+
+} 
+
+
+// images of projects components
+.project1{
+  background-image: url('../images/works-images/bot.jpg');
+}
+.project2{
+  background-image: url('../images/works-images/rest-countries-dark.jpg');
+}
+.project3{
+  background-image: url('../images/works-images/todo-app-crop-2.jpg');
+
+}
+.project4{
+  background-image: url('../images/works-images/e-commerce-product-page.jpg');
+}
+.project5{
+  background-image: url('../images/works-images/ip-address-tracker.jpg');
+}
+.project6{
+  background-image: url('../images/works-images/loop-studio-desktop.png');
+  background-position: 100% 0%;
+}
+
+
+
+
+
+// Responsive settings
+
+@media (max-width: 720px) {
+  .projects{
+    width: 100%;
+    place-items: center;
+    scroll-snap-align: center;
+    user-select: none;
+    padding: 1rem;
+    margin: auto;
+
+    //border: 2px solid red;
+   
+    
+    }
+    .projects__card {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: auto;
+      margin-top: 4rem;
+      margin-bottom:auto;
+      .live{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 44%;
+        top:30%;
+        width: 45px;
+        height: 45px;
+        z-index: 4;
+        display: none;
+        color:white;
+        margin-right: auto;
+      
+      
+      
+      
+        
+      }
+      &__container {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        min-height: 40%;
+        width: 75%;
+    
+          
+      }
+      &__content{
+        background-color: $cardColor;
+        border-radius: inherit;
+        margin: 1px;
+        position: relative;
+        z-index: 2;
+        text-align: left;
+        padding: 1rem;
+        object-fit: cover;
+        height: 100%;
+    
+      } 
+      &__texts{
+        color: rgb(240, 240, 240);
+        text-align: left;
+        padding: 1rem 0.20rem;
+    
+      }
+      &__header{
+        font-size: 14px;
+        
+      }
+      &__image{
+        align-items: center;
+        border-radius: inherit;
+        height: 12rem;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+      
+    
+    
+        //border:red 1px solid;
+      }
+      &__info{
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        font-size: 12px;
+         
+      }
+    }
+    
+    }
+
+    
+
+
+    @media  only screen and   (max-width: 1253px) and (min-width: 720px){
+      .projects{
+        width: 100%;
+        place-items: center;
+        scroll-snap-align: center;
+        user-select: none;
+        margin-bottom: auto;
+        padding: 0rem 1rem;
+        overflow: hidden;
+
+        &__card {
+          display: grid;
+          justify-items: center;
+          grid-template-columns: auto auto auto;
+          margin-top: 4rem;
+          overflow: hidden;
+
+        }
+        }}
+
+
+        @media  only screen and   (max-width: 420px){
+          .projects{
+            width: 100%;
+            place-items: center;
+            scroll-snap-align: center;
+            user-select: none;
+            margin: auto;
+            padding: 0rem 1rem;
+
+            &__card {
+              display: grid;
+              justify-items: center;
+              grid-template-columns: auto ;
+              margin-top: 4rem;
+
+            }
+            }}
+    
+    
+        
+
+
+  
+
+
+
+
+
+
+
+
+
+
+

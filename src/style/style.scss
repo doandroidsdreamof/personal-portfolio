@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import './projectcomponents.scss';
+@import './noise.scss';
+@import './skillcomponents.scss';
+@import './responsive.scss';
+@import './navbar.scss';
+@import './hero.scss';
+@import './animation.scss';
+@import './popup.scss';
+@import './contact.scss';
+
+
+$bgColor: rgb(20, 20, 20);
+$cardColor: rgb(23, 23, 23);
+$blur: 20px;
+$Inter: 'Inter', sans-serif;
+$dark: #1A1A1A;
+$textColor: #757575;
+$Inter: "Inter", sans-serif;
+$yellow: #DFFB6D;
+$blue: #2196f3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  
+}
+/* custom webkit scrollbar
+ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #505050;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+body {
+  overflow-x: hidden;
+  background-color: $bgColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -50;
+  pointer-events: none;
+  height: 100vh;
+  width: 100%;
+  //border:white 3px solid;
+
+}
+
+.section {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  scroll-snap-align: center;
+  user-select: none;
+  margin: auto;
+  padding: 8rem 0rem;
+  background-color: rgb(0,0,0,0.60);
+
+  //border:red solid 2px;
+
+
+}
+h1,h4 {
+  font-weight: 500;
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: white;
+  line-height: 100%;
+  text-align: center;
+  margin:0;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transform: translateY(7rem);
+  margin-bottom: 5rem;
+  transition:  all 400ms ease-in-out;
+
+}
+h2 {
+  font-weight: 500;
+  font-size: 3vw;
+  text-transform: uppercase;
+  //-webkit-text-stroke: 1px white;
+  //color: transparent;
+  //margin-bottom: 3rem; 
+  text-align: left;
+  font-family: $Inter;
+  color: white;
+  transform: translateY(7rem);
+  margin-bottom: 5rem;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transition:  all .2ms ease-in-out;
+
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0,0.60);
+  text-align: center;
+  //padding: 2rem 6rem;
+
+
+
+
+
+
+
+}
+
+
+
+.languages__head{
+  transform: translateY(7rem);
+  margin-bottom: 5rem;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  text-align: ce;
+
+}
+
+
+// Responsive settings
+/*
+@media (max-width: 800px) {
+  .container {
+    padding: 2rem;
+    justify-content: center;
+    display: flex;
+    &__gradient{
+      width: 85%;
+    }
+  }
+
+  }*/
+
+
+   
+   
+
+  
+  
