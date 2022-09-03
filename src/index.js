@@ -7,7 +7,7 @@ import "./heroAnimation";
 import "./popUp";
 import "./animation";
 import "./scrollUp";
-
+import './sideNavBar';
 
 
 

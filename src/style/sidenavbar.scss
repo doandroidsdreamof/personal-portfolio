@@ -1,0 +1,154 @@
+$bgColor: rgb(20, 20, 20);
+$cardColor: rgb(23, 23, 23);
+$blur: 20px;
+$Inter: "Inter", sans-serif;
+$dark: #1a1a1a;
+$textColor: #757575;
+$Inter: "Inter", sans-serif;
+$yellow: #dffb6d;
+$blue: #2196f3;
+
+$sidenav-width: 9rem;
+$sidenav-gutter: 1.5rem;
+$icon-width: 2.5rem;
+$icon-size: 1.25rem;
+$timing: ease-out;
+$duration: 450ms;
+
+$buttonWidth: 1.60rem;
+$buttonHeight: 1.10rem;
+$lineThickness: 2px;
+$transitionSpeed: 0.25s;
+$transitionEasing: ease-in-out;
+
+.sidenav {
+  display: flex;
+  flex-flow: row nowrap;
+  resize: none;
+  overflow: hidden;
+  width: 17em;
+  max-width: 30%;
+  box-shadow: rgba(#000, 0.1) 0 7px 29px 0;
+  position: fixed;
+  height: 100vh;
+  margin-top: -3rem;
+  z-index: 50;
+  font-family: $Inter;
+  
+  
+  &__header{
+    padding: 2rem;
+  }
+  &__list{
+    flex: 0  auto;
+	min-width: $icon-width;
+    text-align: left;
+    position: relative;
+    display: flex;
+	flex-flow: column nowrap;
+	list-style: none;
+	min-width: $icon-width;
+    transition: width $duration $timing;
+    transition: all 300ms ease-in;
+    transform: translateX(-10rem);
+    justify-content: space-around;
+    gap: 2rem;
+    &.is-collapsed {
+        width:  $sidenav-width * 0;
+        transform: translateX(0rem);
+        position: relative;
+      
+      }
+    &.is-active {
+        border-color: transparent;
+      &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+
+      }
+
+      &:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+
+      }
+    }
+    &__text{
+      
+        cursor:pointer;
+        transition: width $duration $timing;
+        transition: all 300ms ease-in;
+        width: fit-content;
+        min-width: 100%;
+        border: 2px solid red;
+ 
+        &:hover{
+
+
+		background-color: rgba(255, 255, 255, 0.40);
+		color: #fff;
+        }
+    }
+   
+  }
+  &__container {
+    display: flex;
+    flex-flow: column nowrap;
+    background: #141414;
+    color: #fff;
+    flex: 0 1 auto;
+    width: $sidenav-width;
+    max-width: 100%;
+    height: 100vh;
+    position: fixed;
+    transition: width $duration $timing;
+    transition: all 300ms ease-in;
+    &.is-collapsed {
+      width:  $sidenav-width * 0;
+    
+    }
+  }
+  &__hamburger {
+    position: relative;
+    display: block;
+    width: $buttonWidth;
+    height: $buttonHeight;
+    background: transparent;
+    border-top: $lineThickness solid;
+    border-bottom: $lineThickness solid;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all $transitionSpeed $transitionEasing;
+   
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: $lineThickness;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      transform: translate(-50%, -50%);
+      transition: transform $transitionSpeed $transitionEasing;
+    }
+    &.is-active {
+        border-color: transparent;
+      &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+
+      }
+
+      &:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+
+      }
+    }
+
+
+  }
+}
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
