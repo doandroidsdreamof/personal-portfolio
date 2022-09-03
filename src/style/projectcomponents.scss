@@ -68,11 +68,10 @@ background-color: rgb(0,0,0,0.60);
   gap: 2rem;
   //border:1px solid white;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:  repeat(3, 1fr);
   margin-top: 4rem;
   margin-bottom:auto;
   padding: 5rem 0rem;
-  
   &__card__head{
   
   }
@@ -83,10 +82,8 @@ background-color: rgb(0,0,0,0.60);
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    min-height: 40%;
     overflow: hidden;
     min-width: 100%;
-      
   }
   &__content{
     background-color: $bgColor;
@@ -122,11 +119,13 @@ background-color: rgb(0,0,0,0.60);
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 70%;
     opacity: 0.7;
     border-radius: 2px;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+
     &:hover{
       -webkit-filter: blur(7px);
       filter: blur(7px);
@@ -210,8 +209,7 @@ background-color: rgb(0,0,0,0.60);
   background-image: url('../images/works-images/ip-address-tracker.jpg');
 }
 .project6{
-  background-image: url('../images/works-images/loop-studio-desktop.png');
-  background-position: 100% 0%;
+  background-image: url('../images/works-images/loop.png');
 }
 
 
@@ -240,6 +238,8 @@ background-color: rgb(0,0,0,0.60);
       grid-template-columns: auto;
       margin-top: 4rem;
       margin-bottom:auto;
+      padding: 0rem 4rem;
+
       .live{
         position: absolute;
         transform: translate(-50%,-50%);
@@ -251,6 +251,7 @@ background-color: rgb(0,0,0,0.60);
         display: none;
         color:white;
         margin-right: auto;
+
       
       
       
@@ -263,8 +264,7 @@ background-color: rgb(0,0,0,0.60);
         cursor: pointer;
         position: relative;
         min-height: 40%;
-        width: 75%;
-    
+
           
       }
       &__content{
@@ -276,7 +276,8 @@ background-color: rgb(0,0,0,0.60);
         text-align: left;
         padding: 1rem;
         object-fit: cover;
-        height: 100%;
+        min-width: 100%;
+       
     
       } 
       &__texts{
@@ -286,7 +287,6 @@ background-color: rgb(0,0,0,0.60);
     
       }
       &__header{
-        font-size: 14px;
         
       }
       &__image{
@@ -327,9 +327,10 @@ background-color: rgb(0,0,0,0.60);
         &__card {
           display: grid;
           justify-items: center;
-          grid-template-columns: auto auto auto;
+          grid-template-columns:  repeat(3, 1fr);
           margin-top: 4rem;
           overflow: hidden;
+    
 
         }
         }}
@@ -343,6 +344,7 @@ background-color: rgb(0,0,0,0.60);
             user-select: none;
             margin: auto;
             padding: 0rem 1rem;
+            
 
             &__card {
               display: grid;
