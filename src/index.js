@@ -6,6 +6,7 @@ import "./hover";
 import "./heroAnimation";
 import "./popUp";
 import "./animation";
+import "./scrollUp";
 
 
 
