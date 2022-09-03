@@ -1,0 +1,95 @@
+
+$bgColor: rgb(20, 20, 20);
+$cardColor: rgb(23, 23, 23);
+$blur: 20px;
+$Inter: 'Inter', sans-serif;
+$dark: #1A1A1A;
+$textColor: #757575;
+$Inter: "Inter", sans-serif;
+$yellow: #DFFB6D;
+$blue: #2196f3;
+
+
+/*
+
+socialmedia projects__card
+socialmedia__container   projects__card__container
+socialmedia__card__border   projects__card__border
+socialmedia__card__content   projects__card__content
+socialmedia__card__github mediaicons        projects__card__image github 
+  
+  
+
+
+.projects{
+width: 100%;
+place-items: center;
+scroll-snap-align: center;
+user-select: none;
+margin-bottom: auto;
+padding: 0rem 15rem;
+background-color: rgb(0,0,0,0.60);
+
+}
+
+.projects__card {
+  //border: 2px solid white;
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  //border:1px solid white;
+  justify-items: center;
+  grid-template-columns:  repeat(3, 1fr);
+  margin-top: 4rem;
+  margin-bottom:auto;
+  padding: 5rem 0rem;
+
+  &__container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-width: 100%;
+  }
+  &__content{
+    background-color: $bgColor;
+    border-radius: inherit;
+    margin: 1px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding: 2rem;
+    object-fit: cover;
+    height: 16rem;
+ 
+
+  } 
+
+  &__image{
+    align-items: center;
+    border-radius: inherit;
+    height: 12rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    opacity: 1;
+    border-radius: 2px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+    &:hover{
+      -webkit-filter: blur(7px);
+      filter: blur(7px);
+      opacity: 0.5;
+
+ 
+    }
+ 
+
+
+}
+
+*/
