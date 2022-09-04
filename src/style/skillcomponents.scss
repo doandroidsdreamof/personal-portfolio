@@ -18,7 +18,10 @@
     flex: 1 0 25%;
     height: 100%;
     opacity: 0;
-    transition:  all  ease-in
+    transition:  all  ease-in;
+    box-shadow:  10px 10px 10px var(--card-box-shadow-first),
+    -10px -10px 10px var(--card-box-shadow-second);
+
 
       
   }
@@ -36,8 +39,6 @@
 
   } 
   &__card__texts{
-    color: rgb(240, 240, 240);
-    text-align: left;
     padding: 1rem 0.20rem;
 
   }

@@ -12,7 +12,6 @@ socialmedia__card__github mediaicons        projects__card__image github
   place-items: center;
   scroll-snap-align: center;
   user-select: none;
-  background-color: var(--bg-color);
   position: relative;
   gap: 1rem;
   justify-items: center;
@@ -20,8 +19,11 @@ socialmedia__card__github mediaicons        projects__card__image github
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 2rem;
+  
   &__container {
     position: relative;
+    
   }
 
   &__card__content {
@@ -38,6 +40,7 @@ socialmedia__card__github mediaicons        projects__card__image github
     border: 1px solid var(--card-border-color);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    
     &:hover {
       border:  var(--blue-color) solid;
     }
@@ -97,6 +100,7 @@ socialmedia__card__github mediaicons        projects__card__image github
     justify-content: center;
     padding: 0rem 4rem;
 
+
     &__container {
       position: relative;
       justify-content: center;
@@ -114,7 +118,7 @@ socialmedia__card__github mediaicons        projects__card__image github
       border-radius: 20%;
       justify-content: center;
       display: flex;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid var(--card-border-color);
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
       &:hover {

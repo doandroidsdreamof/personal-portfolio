@@ -13,7 +13,7 @@ const turkishButton = document.querySelector('.popup__languagebuttons__türkçe'
 
 const buttonColor = 'rgb(33, 150, 243)';
 const popUpTopColor = 'rgb(23, 23, 23)';
-const popUpButtonColor = '#efede9';
+const popUpButtonColor = 'white';
 
 // Open popup //
 popUpButton.addEventListener('click',(e) =>{

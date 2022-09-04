@@ -41,7 +41,7 @@
     justify-content: center;
     transform: translateY(50px);
     z-index: 50;
-    background-color: var(--blue-color);
+    background-color: var(--popup-button-bg-color);
     transition: all 400ms ease-in-out;
 
     cursor: pointer;
@@ -59,7 +59,7 @@
 
     }
     &:hover {
-      background-color: rgb(33, 150, 243, 0.8);
+      background-color: var(--popup-hover-bg-color);
     }
     &__text {
       font-family: $Inter;
@@ -73,7 +73,8 @@
       transition: all 400ms ease-in-out;
     }
     &.expand {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.16);
+      box-shadow:  20px 20px 60px #bebebe,
+      -20px -20px 60px #ffffff;
       height: 18rem;
       width: 450px;
     }
@@ -99,13 +100,11 @@
     background-repeat: no-repeat;
   }
   &__module__top {
-    // background-color: $cardColor;
     display: flex;
     flex-direction: row;
     height: 50px;
     transition: height $popUpOpen;
     width: fit-content;
-    //border: 2px solid black;
   }
   &__module__close {
     align-items: center;
@@ -149,7 +148,7 @@
     margin-top: 1rem;
     &__english,
     &__türkçe {
-      color: black;
+      color: var(--popup-language-button-color);
       font: inherit;
       line-height: 1;
       cursor: pointer;
@@ -166,7 +165,7 @@
       visibility: hidden;
       
       &:hover {
-        background-color: rgba(0, 0, 0, 0.91);
+        background-color:var(--popup-language-button-hover-color);
         color: white;
       }
     }
@@ -293,7 +292,7 @@ popup__module__line
       gap: 3px;
       &__english,
       &__türkçe {
-        color: black;
+        color: var(--popup-language-button-color);
         font: inherit;
         line-height: 1;
         cursor: pointer;
@@ -301,7 +300,7 @@ popup__module__line
         width: 150px;
         height: 35px;
         font-family: $Inter;
-        border: 2px solid black;
+        border: 2px solid var(--popup-border-color);
         border-radius: 8px;
         background: transparent;
         cursor: pointer;

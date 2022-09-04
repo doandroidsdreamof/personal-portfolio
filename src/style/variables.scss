@@ -1,79 +1,11 @@
 
-/*
-
-  --text-color: rgba(48,48,48, 1);
-  --text-soft-color: rgba(74,74,74, 1);
-  --text-strong-color: rgba(74,74,74, 1);
-  --subtle-color: rgba(249,249,249, 1);
-  --border-color: rgba(231,231,231, 1);
-  --shadow-color: rgba(191,191,191, 1);
-  --input-color: rgba(255,255,255, 1);
-  --outline-color: rgba(228,169,180, 1);
-  --mark-color: rgba(115,115,115, 0.08);
-  --special-color: rgba(115,115,115, 1);
-  --special-bg-color: rgba(118,118,118, 1);
-  --special-text-color: rgba(255,255,255, 1);
-  --special-shadow-color: rgba(78,78,78, 1);
-  --special-mark-color: rgba(255,255,255, 0.08);
-  --light-color: rgba(243,243,243, 1);
-  --dark-color: rgba(71,71,71, 1);
-  --text-color-rgb: 48,48,48;
-  --subtle-color-rgb: 249,249,249;
-  --special-color-rgb: 115,115,115;
-  --special-text-color-rgb: 255,255,255;
-  --special-bg-color-rgb: 118,118,118;
-  --shadow-color-rgb: 191,191,191;
-  --special-shadow-color-rgb: 78,78,78;
-  --outline-color-rgb: 228,169,180;
-  --dark-color-rgb: 71,71,71;
-  --light-color-rgb: 243,243,243;
-$bgMixSection: rgb(0,0,0,0.60);
-
-*/
 
 
-:root{
-    --bg-color: #080808;
-    --head-color: white;
-    --blue-color:#2196f3;
-    --scrollup-color:rgba(255,255,255,0.60);
-    --card-color: rgb(23, 23, 23);
-    --card-border-color:rgba(255, 255, 255, 0.2);
-    --text-color:#757575;
-    --popup-button-color:white;
-    --popup-border-color:black;
-    --scroll-up-color:rgba(255,255,255,0.60);
-    --scroll-up-hover:white;
-    --side-nav-head-color:white;
-    --hero-bio-color:#697887;
-    --projects-card-live-color:white;
-    --hamburger-color:rgba(255, 255, 255, 0.8);
-    --side-nav-container-color:#141414;
-    --projects-card-container-text-color:rgb(240, 240, 240);
-  
-    --card-first-effect-color: #2196f3;
-    --card-second-effect-color: rgba(217, 0, 255, 0.1);
-  
-     // Contact Form //
-    --text-area-bg-color: #2d2d2d;
-    --button-text-color: white;
-    --button-border-color: white;
-    --text-area-focus-color:rgba(33, 150, 243, 0.5);
-    --text-area-text-color:white;
-    --button-border-color:white;
-    --button-bg-color:white;
-  
-  }
-  .light-mode{
-    --bg-color: rgba(255,255,255, 1);
-    --green-color: #88ffc6;
-    --head-color: rgba(48,48,48, 1);
-    --scrollup-color: rgba(48,48,48, 1);
-    --hamburger-color:black;
-  
-  }
-  
-  
+
+
+
+
+
 // Effects //
 
 $blur: 20px;
@@ -82,13 +14,9 @@ $popUpOpen: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Effects Color //
 
-
-
-
 // Fonts //
 
 $Inter: "Inter", sans-serif;
-
 
 // Side Navbar //
 
@@ -103,13 +31,3 @@ $buttonHeight: 1.1rem;
 $lineThickness: 2px;
 $transitionSpeed: 0.25s;
 $transitionEasing: ease-in-out;
-
-
-
-
-
-
-
-
-
-

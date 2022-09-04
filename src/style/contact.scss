@@ -1,18 +1,3 @@
-/*
-contact__container container
-contact__name__container input-container
-contact__name col-xs-12       
-contact__name__style styled-input wide
-contact__email__container col-md-6 col-sm-
-contact__email__style    styled-input
-ccontact__text__container ol-xs-12
-contact__email__style styled-input wide
-contact__button__container col-xs-12
-contact__button__style btn-lrg submit-btn
-      */
-
-
-
 .contact__head {
   color: var(--head-color);
 }
@@ -27,7 +12,6 @@ contact__button__style btn-lrg submit-btn
   text-align: center;
   margin-bottom: 4rem;
   transition: all 20ms ease-in-out;
-  
 
   &__image {
     background-image: url("../images/popup-images/contact-image.jpg");
@@ -48,21 +32,23 @@ contact__button__style btn-lrg submit-btn
     position: relative;
     display: flex;
     width: 68.5%;
+    box-shadow:  10px 10px 10px var(--card-box-shadow-first),
+    -10px -10px 10px var(--card-box-shadow-second);
   }
   &__block {
-    background-color: var(--card-border-color);
     position: relative;
     background-color: var(--card-color);
     //margin: 1px;
     position: relative;
-    z-index: 2;
+    z-index: 50;
     padding: 2rem 4rem;
     object-fit: cover;
     border-radius: inherit;
     width: 60%;
+
   }
   &__button__block {
-    color: white;
+    color: var(--button-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,8 +62,8 @@ contact__button__style btn-lrg submit-btn
     transition: all 600ms ease-in-out;
     text-align: center;
     &:hover {
-      background-color: var(--button-bg-color);
-      color: black;
+      background-color: var(--button-bg-hover-color);
+      color: var(--button-hover-color);
     }
   }
   &__name__style,
@@ -112,6 +98,9 @@ textarea {
   resize: none;
   display: block;
   width: 100%;
+  box-shadow:
+  inset 2px 2px 4px var(--textarea-box-shadow-first),
+  inset -2px -2px 4px var(--textarea-box-shadow-second);
 }
 textarea {
   min-height: 15em;
@@ -161,14 +150,12 @@ input[type="checkbox"]:checked + label {
     }
 
     &__border {
-      background-color: var(--card-border-color);
       border-radius: 10px;
       cursor: pointer;
       position: relative;
       width: 80%;
     }
     &__block {
-      background-color: var(--card-border-color);
       position: relative;
       margin: 1px;
       position: relative;
@@ -210,14 +197,12 @@ input[type="checkbox"]:checked + label {
     }
 
     &__border {
-      background-color: var(--card-border-color);
       border-radius: 10px;
       cursor: pointer;
       position: relative;
       width: 80%;
     }
     &__block {
-      background-color: var(--card-border-color);
       position: relative;
       background-color: var(--bg-color);
       margin: 1px;
@@ -237,7 +222,6 @@ input[type="checkbox"]:checked + label {
       cursor: pointer;
       height: 30px;
       font-family: $Inter;
-      border: 2px solid var(--button-border-color);;
       border-radius: 8px;
       background: transparent;
       transition: all 600ms ease-in-out;

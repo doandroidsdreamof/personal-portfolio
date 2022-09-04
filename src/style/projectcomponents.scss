@@ -47,6 +47,9 @@ $inner : $jump
   display: none;
   color: var(--projects-card-live-color);
   margin-right: auto;
+
+
+
 }
 .projects__card {
   position: relative;
@@ -65,6 +68,8 @@ $inner : $jump
     position: relative;
     overflow: hidden;
     min-width: 100%;
+    box-shadow:  10px 10px 10px var(--card-box-shadow-first),
+    -10px -10px 10px var(--card-box-shadow-second);
   }
   &__content {
     background-color: var(--card-color);
@@ -76,6 +81,7 @@ $inner : $jump
     padding: 2rem;
     object-fit: cover;
     height: 16rem;
+    
   }
   &__texts {
     color: var( --projects-card-container-text-color);
