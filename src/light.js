@@ -1,7 +1,16 @@
-// Skills Section //
+
+// Skills Section Variables//
 const allCards = document.getElementsByClassName('skills__card')
 const cards = document.querySelector('.skills__card')
 const skillsContainer = document.getElementById('mainskills')
+
+// Projects Section Variables //
+const allProjectsCard = document.getElementsByClassName('projects__card__container')
+const projectsCard = document.querySelector('.projects__card__container')
+const projectsContainer = document.getElementById('mainsprojects')
+
+
+// Skills Section  //
 
 skillsContainer.addEventListener('mousemove', (e) => {
     for (let i = 0; i < allCards.length; i++) {
@@ -10,7 +19,6 @@ skillsContainer.addEventListener('mousemove', (e) => {
         vertical = e.clientY - trace.top;
         allCards[i].style.setProperty("--horizontical", `${horizontical}px`);
         allCards[i].style.setProperty("--vertical", `${vertical}px`);
-
     }
 })
 
@@ -21,15 +29,10 @@ skillsContainer.addEventListener('mouseout', () => {
         allCards[i].style.removeProperty("--horizontical");
         allCards[i].style.removeProperty("--vertical");
     }
-
-
 })
 
 
 // Projects Section //
-const allProjectsCard = document.getElementsByClassName('projects__card__container')
-const projectsCard = document.querySelector('.projects__card__container')
-const projectsContainer = document.getElementById('mainsprojects')
 
 projectsContainer.addEventListener('mousemove', (e) => {
     const target = e.target;

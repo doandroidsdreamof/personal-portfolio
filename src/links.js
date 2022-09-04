@@ -1,10 +1,10 @@
+// Dom Variables //
 const allImageClass = document.querySelectorAll('.projects__card__image');
 const allImageAndSvgClass = document.querySelectorAll('.link');
 const allSvg = document.querySelectorAll('.live');
 const allSkillsCard = document.querySelectorAll('.skills__card');
 
-
-// open links projects //
+// Open links projects //
 allImageAndSvgClass.forEach(item => {
   item.addEventListener('mouseup', (e) => {
     e.stopPropagation()
@@ -40,7 +40,7 @@ allImageAndSvgClass.forEach(item => {
 })
 
 
-// open links projects svg//
+// Open links projects svg//
 allSvg.forEach(item => {
   item.addEventListener('mouseup', (e) => {
     e.stopPropagation()
@@ -76,7 +76,7 @@ allSvg.forEach(item => {
 
 
 
-// skills card links 
+// Skills card links //
 
 allSkillsCard.forEach(item => {
   item.addEventListener('mouseup', (e) => {
@@ -115,11 +115,8 @@ allSkillsCard.forEach(item => {
           window.open("https://www.figma.com/");
           break;
       }
-
     }
-
   })
-
 })
 
 

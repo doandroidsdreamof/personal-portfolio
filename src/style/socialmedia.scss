@@ -1,49 +1,31 @@
-$bgColor: rgb(20, 20, 20);
-$cardColor: rgb(23, 23, 23);
-$blur: 20px;
-$Inter: "Inter", sans-serif;
-$dark: #1a1a1a;
-$textColor: #757575;
-$Inter: "Inter", sans-serif;
-$yellow: #dffb6d;
-$blue: #2196f3;
 
 /*
-
-
-
- 
 socialmedia projects__card
 socialmedia__container   projects__card__container
 socialmedia__card__border   projects__card__border
 socialmedia__card__content   projects__card__content
 socialmedia__card__github mediaicons        projects__card__image github 
-
-}
-
 */
 
-
 .socialmedia {
-    width: 100%;
-    place-items: center;
-    scroll-snap-align: center;
-    user-select: none;
-    background-color: #080808;
-    position: relative;
-    gap: 1rem;
-    justify-items: center;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 100%;
+  place-items: center;
+  scroll-snap-align: center;
+  user-select: none;
+  background-color: var(--bg-color);
+  position: relative;
+  gap: 1rem;
+  justify-items: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   &__container {
     position: relative;
-  
   }
 
   &__card__content {
-    background-color: $bgColor;
+    background-color: var(--bg-color);
     position: relative;
     z-index: 2;
     padding: 1rem;
@@ -53,106 +35,91 @@ socialmedia__card__github mediaicons        projects__card__image github
     border-radius: 20%;
     justify-content: center;
     display: flex;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    &:hover{
-        border: $blue solid;
+    border: 1px solid var(--card-border-color);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      border:  var(--blue-color) solid;
     }
   }
   &__card__github {
-    background-image: url('../images/socialmedia-icons/github.jpg');
- 
-}
-&__card__vimeo {
-    background-image: url('../images/socialmedia-icons/vimeo.png');
+    background-image: url("../images/socialmedia-icons/github.jpg");
+  }
+  &__card__vimeo {
+    background-image: url("../images/socialmedia-icons/vimeo.png");
+  }
 
-}
+  &__card__linkedin {
+    background-image: url("../images/socialmedia-icons/linkedin.png");
+  }
 
-&__card__linkedin {
-    background-image: url('../images/socialmedia-icons/linkedin.png');
-
-}
-
-&__card__photowebsite {
-    background-image: url('../images/socialmedia-icons/berkaykuytuoglu.com.jpg');
-
-}
+  &__card__photowebsite {
+    background-image: url("../images/socialmedia-icons/berkaykuytuoglu.com.jpg");
+  }
 }
 
+.mediaicons {
+  align-items: center;
+  align-self: center;
+  height: 80%;
+  width: 80%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
 
-.mediaicons{
-    align-items: center;
-    align-self: center;
-    height: 80%;
-    width: 80%;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    object-fit: cover;
-    border-radius: 50%;
-    cursor: pointer;
-
-    &:hover{
-        opacity: 0.5;
-  
-   
-      }
-
+  &:hover {
+    opacity: 0.5;
+  }
 }
-
-
-
 
 // Responsive settings //
 
 @media (max-width: 720px) {
-    .socialmedia {
-        width: 100%;
-        place-items: center;
-        scroll-snap-align: center;
-        user-select: none;
-        background-color: #080808;
-        position: relative;
-        gap: 1rem;
-        justify-items: center;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0rem 4rem;
+  .socialmedia {
+    width: 100%;
+    place-items: center;
+    scroll-snap-align: center;
+    user-select: none;
+    background-color: var(--bg-color);
+    position: relative;
+    gap: 1rem;
+    justify-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 4rem;
 
-
-      &__container {
-        position: relative;
-        justify-content: center;
-        display: flex;
-      }
-    
-      &__card__content {
-        background-color: $bgColor;
-        position: relative;
-        z-index: 2;
-        padding: 1rem;
-        object-fit: cover;
-        height: 8rem;
-        width: 8em;
-        border-radius: 20%;
-        justify-content: center;
-        display: flex;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        &:hover{
-            border: $blue solid;
-        }
-      }
-
-
+    &__container {
+      position: relative;
+      justify-content: center;
+      display: flex;
     }
 
+    &__card__content {
+      background-color: var(--bg-color);
+      position: relative;
+      z-index: 2;
+      padding: 1rem;
+      object-fit: cover;
+      height: 8rem;
+      width: 8em;
+      border-radius: 20%;
+      justify-content: center;
+      display: flex;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        border: var(--blue-color) solid;
+      }
+    }
+  }
 }

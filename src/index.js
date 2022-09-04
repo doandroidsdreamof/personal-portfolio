@@ -8,6 +8,7 @@ import "./popUp";
 import "./animation";
 import "./scrollUp";
 import './sideNavBar';
+import './darkMode';
 
 
 
@@ -34,6 +35,4 @@ return
 
 })
 */
-
-
 

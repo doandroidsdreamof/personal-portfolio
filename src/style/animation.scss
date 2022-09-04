@@ -1,16 +1,17 @@
 .download {
-	-webkit-animation: swirl-in-fwd 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
-	        animation: swirl-in-fwd 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+  -webkit-animation: swirl-in-fwd 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    0.5s both;
+  animation: swirl-in-fwd 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.5s both;
 }
- @-webkit-keyframes swirl-in-fwd {
+@-webkit-keyframes swirl-in-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
-            transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
     opacity: 0;
   }
   100% {
     -webkit-transform: rotate(0) scale(1);
-            transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
     opacity: 1;
   }
 }
@@ -18,55 +19,44 @@
 @keyframes swirl-in-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
-            transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
     opacity: 0;
   }
   100% {
     -webkit-transform: rotate(0) scale(1);
-            transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
     opacity: 1;
   }
 }
 
-
-
-
-
 svg {
-	-webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation:e scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: scale-in-ver-center 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: e scale-in-ver-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
 }
 
-
-
- @-webkit-keyframes scale-in-ver-center {
-    0% {
-      -webkit-transform: scaleY(0.20);
-              transform: scaleY(0.20);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      opacity: 1;
-    }
+@-webkit-keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.2);
+    transform: scaleY(0.2);
+    opacity: 1;
   }
-  @keyframes scale-in-ver-center {
-    0% {
-      -webkit-transform: scaleY(0.20);
-              transform: scaleY(0.20);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
   }
-  
-
-// popup animations //
-
-
-
-// reveal animations //
+}
+@keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.2);
+    transform: scaleY(0.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import './variables.scss';
 @import './projectcomponents.scss';
 @import './noise.scss';
 @import './skillcomponents.scss';
-@import './responsive.scss';
 @import './navbar.scss';
 @import './hero.scss';
 @import './animation.scss';
@@ -14,26 +14,22 @@
 
 
 
-$bgColor: rgb(20, 20, 20);
-$cardColor: rgb(23, 23, 23);
-$blur: 20px;
-$Inter: 'Inter', sans-serif;
-$dark: #1A1A1A;
-$textColor: #757575;
-$Inter: "Inter", sans-serif;
-$yellow: #DFFB6D;
-$blue: #2196f3;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
-  
+
+html{
+  scrollbar-width: thin;
+  scrollbar-color: #505050;
+
 }
 /* custom webkit scrollbar
  */
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 10px;
 }
 
@@ -53,14 +49,14 @@ $blue: #2196f3;
   background: #555;
 }
 
-
 body {
   overflow-x: hidden;
-  background-color: $bgColor;
+  background-color: var(--bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   font-family: 'Inter', sans-serif;
+  transition: background 500ms ease-in-out;
 }
 
 canvas {
@@ -71,9 +67,7 @@ canvas {
   pointer-events: none;
   height: 100vh;
   width: 100%;
-
 }
-
 .section {
   width: 100%;
   display: grid;
@@ -82,20 +76,17 @@ canvas {
   user-select: none;
   margin: auto;
   padding: 8rem 0rem;
-  background-color: rgb(0,0,0,0.60);
-
-
-
+  background-color: var(--bg-color);
 }
 h1,h4 {
   font-weight: 500;
   font-size: 3vw;
   text-transform: uppercase;
-  color: white;
+  color: var(--head-color);
   line-height: 100%;
   text-align: center;
   margin:0;
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: $polygonReveal;
   transform: translateY(7rem);
   margin-bottom: 5rem;
   transition:  all 400ms ease-in-out;
@@ -107,24 +98,18 @@ h2 {
   text-transform: uppercase;
   text-align: left;
   font-family: $Inter;
-  color: white;
+  color: var(--head-color);
   transform: translateY(7rem);
   margin-bottom: 5rem;
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: $polygonReveal;
   transition:  all .2ms ease-in-out;
-
 }
-
 .container{
   width: 100%;
   height: 100%;
-  background-color: rgb(0,0,0,0.60);
+  background-color: var(--bg-color);
   text-align: center;
-
-
-
-
-
+  
 }
 
 
@@ -132,8 +117,7 @@ h2 {
 .languages__head{
   transform: translateY(7rem);
   margin-bottom: 5rem;
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-
+  clip-path: $polygonReveal;
 }
 
 

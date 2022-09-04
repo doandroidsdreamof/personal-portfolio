@@ -1,12 +1,4 @@
-$bgColor: rgb(20, 20, 20);
-$cardColor: rgb(23, 23, 23);
-$blur: 20px;
-$Inter: 'Inter', sans-serif;
-$dark: #1A1A1A;
-$textColor: #757575;
-$Inter: "Inter", sans-serif;
-$yellow: #DFFB6D;
-$blue: #2196f3;
+
 
 .scroll{
     width: fit-content;
@@ -16,7 +8,7 @@ $blue: #2196f3;
     transform: translate(-50%,-50%);
     z-index: 50;
     &__up{
-        color: rgba(255,255,255,0.60);
+        color: var(--scrollup-color);
         cursor: pointer;
         transition:  all 300ms ease-in;
         display: none;
@@ -24,15 +16,15 @@ $blue: #2196f3;
         height: 3.30rem;
         -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
         animation: heartbeat 2.5s ease-in-out infinite both;
-    
+
      &:hover{
-        color:White;
+        color: var(--scroll-up-color);
      }
     }
 }
 
 
-// bounce animation //
+// Bounce animation //
 
  @-webkit-keyframes heartbeat {
     from {

@@ -10,20 +10,11 @@ contact__email__style styled-input wide
 contact__button__container col-xs-12
 contact__button__style btn-lrg submit-btn
       */
-      
-$textColor: #757575;
-$Inter: "Inter", sans-serif;
-$bgColor: rgb(20, 20, 20);
-$cardColor: rgb(23, 23, 23);
-$textColor: #757575;
-$Inter: "Inter", sans-serif;
-$yellow: #DFFB6D;
-$blue: #2196f3;
 
 
-.contact__head{
-  color: white;
-  
+
+.contact__head {
+  color: var(--head-color);
 }
 
 .contact {
@@ -35,45 +26,33 @@ $blue: #2196f3;
   align-items: center;
   text-align: center;
   margin-bottom: 4rem;
-  transition:  all 20ms ease-in-out;
-
- 
+  transition: all 20ms ease-in-out;
   
-  &__image{
-    background-image: url('../images/popup-images/ai3.jpg');
+
+  &__image {
+    background-image: url("../images/popup-images/contact-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 40%;
     height: auto;
-    //border-radius: 2px 0px;
-    //border: solid 2px rgba(255, 255, 255, 0.2);
     opacity: 0.9;
-    transition:  all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
 
-
-    
-
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }
-  
 
   &__border {
-    //background-color: rgba(255, 255, 255, 0.2);
-    //border-radius: 10px;
     position: relative;
     display: flex;
-    width: 68.50%;
-    
-    
-
+    width: 68.5%;
   }
   &__block {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--card-border-color);
     position: relative;
-    background-color: $bgColor;
+    background-color: var(--card-color);
     //margin: 1px;
     position: relative;
     z-index: 2;
@@ -81,9 +60,6 @@ $blue: #2196f3;
     object-fit: cover;
     border-radius: inherit;
     width: 60%;
-    
-    
-
   }
   &__button__block {
     color: white;
@@ -94,13 +70,13 @@ $blue: #2196f3;
     cursor: pointer;
     height: 45px;
     font-family: $Inter;
-    border: 1px solid white;
+    border: 1px solid var(--button-border-color);
     border-radius: 2px;
     background: transparent;
     transition: all 600ms ease-in-out;
     text-align: center;
     &:hover {
-      background-color: white;
+      background-color: var(--button-bg-color);
       color: black;
     }
   }
@@ -112,8 +88,8 @@ $blue: #2196f3;
     border-radius: 4px;
     &__name__style,
     label {
-      color: white;
-      padding: 0.20rem 0.90rem;
+      color: var(--text-area-text-color);
+      padding: 0.2rem 0.9rem;
       position: absolute;
       top: 10px;
       left: 0;
@@ -129,15 +105,13 @@ textarea {
   padding: 1.2rem;
   border: none;
   font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
+  background-color: var(--text-area-bg-color);
+  color: var(--text-area-text-color);
   border-radius: 2px;
   font-family: $Inter;
   resize: none;
   display: block;
   width: 100%;
-
-
 }
 textarea {
   min-height: 15em;
@@ -150,40 +124,13 @@ textarea:valid ~ label {
   -webkit-transition: all 0.425s ease;
   transition: all 0.425s ease;
   opacity: 0;
-
 }
-
-
-
 
 input:focus,
-textarea:focus{
+textarea:focus {
   outline: none;
-  border: 1px solid rgba(33, 150, 243,0.50);
+  border: 1px solid var(--text-area-focus-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //  Input Attributes  //
 
@@ -191,139 +138,98 @@ input[type="checkbox"]:checked + label {
   font-style: normal;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Responsive Settings //
 
 @media (max-width: 768px) {
-
   .contact {
     &__button__block {
-        width:100%;
-        text-align:center;
-     
+      width: 100%;
+      text-align: center;
     }
-  
   }
 }
-@media only screen and (max-width: 768px){
-.contact{
+@media only screen and (max-width: 768px) {
+  .contact {
     &__name__style,
     &__email__style,
     &__text__style {
-        min-width:80%;
-        
+      min-width: 80%;
     }
-    &__image{
+    &__image {
       background-image: none;
       display: none;
-
-      
     }
 
-    
-  &__border {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    width: 80%;
-    
-  
-    
-  }
-  &__block {
-    background-color: rgba(255, 255, 255, 0.2);
-    position: relative;
-    background-color: $bgColor;
-    margin: 1px;
-    position: relative;
-    z-index: 2;
-    padding: 2rem;
-    object-fit: cover;
-    border-radius: inherit;
-    width: 100%;
-    
-  }
-}
-}
-
-
-@media only screen and (max-width: 480px){
-  textarea {
-    min-height: 5em;
-  }
-  input,
-textarea {
-  padding: 0.90rem;
-  border: none;
-  font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
-  border-radius: 2px;
-  font-family: $Inter;
-  resize: none;
-  display: block;
-  width: 100%;
-
-
-}
-  .contact{
-      &__name__style,
-      &__email__style,
-      &__text__style {
-          min-width:80%;
-          
-          
-      }
-      &__image{
-        background-image: none;
-        display: none;
-  
-        
-      }
-  
-      
     &__border {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: var(--card-border-color);
       border-radius: 10px;
       cursor: pointer;
       position: relative;
       width: 80%;
-      
-    
-      
     }
     &__block {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: var(--card-border-color);
       position: relative;
-      background-color: $bgColor;
       margin: 1px;
       position: relative;
       z-index: 2;
-      padding: 1.40rem;
+      padding: 2rem;
       object-fit: cover;
       border-radius: inherit;
       width: 100%;
-      
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  textarea {
+    min-height: 5em;
+  }
+  input,
+  textarea {
+    padding: 0.9rem;
+    border: none;
+    font-size: 1rem;
+    background-color: var(--text-area-bg-color);
+    color: var(--input-text-color);
+    border-radius: 2px;
+    font-family: $Inter;
+    resize: none;
+    display: block;
+    width: 100%;
+  }
+  .contact {
+    &__name__style,
+    &__email__style,
+    &__text__style {
+      min-width: 80%;
+    }
+    &__image {
+      background-image: none;
+      display: none;
+    }
+
+    &__border {
+      background-color: var(--card-border-color);
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      width: 80%;
+    }
+    &__block {
+      background-color: var(--card-border-color);
+      position: relative;
+      background-color: var(--bg-color);
+      margin: 1px;
+      position: relative;
+      z-index: 2;
+      padding: 1.4rem;
+      object-fit: cover;
+      border-radius: inherit;
+      width: 100%;
     }
     &__button__block {
-      color: white;
+      color: var(--button-text-color);;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -331,12 +237,11 @@ textarea {
       cursor: pointer;
       height: 30px;
       font-family: $Inter;
-      border: 2px solid white;
+      border: 2px solid var(--button-border-color);;
       border-radius: 8px;
       background: transparent;
       transition: all 600ms ease-in-out;
       text-align: center;
-    
     }
   }
-  }
+}

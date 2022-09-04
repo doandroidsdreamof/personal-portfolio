@@ -2,13 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Webpack, Portfolio, Web Development, Frontend Development, Programming, Sass, Gsap, Coding, Style, Website, Webpage, Personal Portfolio">
+    <meta name="author" content="Berkay Kuytuoğlu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Berkay Kuytuoğlu</title>
-    
+    <title>Portfolio</title>
   </head>
-  <body>
-    <div id="container" class="container">
+  <body id="scroll" class="">
+    <div id="container" class="container ">
       <nav>
         <div class="navigation">
           <div class="navigation__flex">
@@ -23,12 +25,19 @@
         <div class="sidenav">
           <div id="sidenav" class="sidenav__container ">
             <header class="sidenav__header">
-              <button class="sidenav__hamburger" aria-label="Expand"></button>
+              <div class="sidenav__block">
+              <button class="sidenav__hamburger"></button>
             <ul class="sidenav__list">
+              <li class="sidenav__list__text">Dark</li>
               <li class="sidenav__list__text">Skills</li>
               <li class="sidenav__list__text">Projects</li>
               <li class="sidenav__list__text">Contact</li>
+              <li class="sidenav__list__text">Github</li>
+              <li class="sidenav__list__text">Vimeo</li>
+              <li class="sidenav__list__text">Linkedin</li>
+              <li class="sidenav__list__text">Photos</li>   
             </ul>
+          </div>
           </header>
             </nav>
             </div>
@@ -42,14 +51,14 @@
       </div>
       <div class="popup">
         <div class="popup__button" >
-           <span class="popup__button__text">Download Resume</span>
+           <span class="popup__button__text stay-same">Download Resume</span>
            <div class="popup__languagebuttons">
             <button class="popup__languagebuttons__türkçe">Türkçe</button> 
             <button class="popup__languagebuttons__english">English</button>
            </div>
           <div class="popup__module">
             <h3 class="popup__head "></h3>
-            <div class="popup__module__content">
+            <div class="popup__module__content stay-same">
               <div class="popup__module__top">
                 <div class="popup__module__close" >
                   <div class="popup__module__close__lines">
@@ -67,12 +76,15 @@
     <aside>
       <div class="scroll">
         <svg
-  class="scroll__up"
+  class="scroll__up "
+  id="up"
   width="44"
   height="44"
   viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
+  aria-label="Expand"
+
 >
   <path
     d="M14.8284 12.7071L16.2426 11.2929L12 7.05027L7.75739 11.2929L9.1716 12.7071L12 9.87869L14.8284 12.7071Z"
@@ -97,7 +109,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content ">
-            <div class="skills__card__image react">
+            <div class="skills__card__image react stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -108,7 +120,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content ">
-            <div class="skills__card__image JavaScript">
+            <div class="skills__card__image JavaScript stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -119,7 +131,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content ">
-            <div class="skills__card__image tailwind">
+            <div class="skills__card__image tailwind stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -130,7 +142,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content ">
-            <div class="skills__card__image node">
+            <div class="skills__card__image node stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -141,7 +153,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content">
-            <div class="skills__card__image npm">
+            <div class="skills__card__image npm stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -152,7 +164,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content ">
-            <div class="skills__card__image git">
+            <div class="skills__card__image git stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -163,7 +175,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content ">
-            <div class="skills__card__image sass ">
+            <div class="skills__card__image sass stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -174,7 +186,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content ">
-            <div class="skills__card__image webpack">
+            <div class="skills__card__image webpack stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -185,7 +197,7 @@
         <div class="skills__card skill-trigger">
           <div class="skills__card__border"></div>
           <div class="skills__card__content">
-            <div class="skills__card__image figma">
+            <div class="skills__card__image figma stay-same">
             </div>
             <div class="skills__card__texts">
               <div class="skills__card__info">          
@@ -203,7 +215,7 @@
           <div  class="projects__card__content">
             <svg id="target" class="live link1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path  d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C6.40848 3 1.71018 6.82432 0.378052 12C1.71018 17.1757 6.40848 21 12 21C17.5915 21 22.2898 17.1757 23.6219 12C22.2898 6.82432 17.5915 3 12 3ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" fill="currentColor" /></svg>
-              <div id="image1" class="projects__card__image project1 link">
+              <div id="image1" class="projects__card__image project1 link stay-same">
             </div>
             <div class="projects__card__texts">
               <div class="projects__card__info">          
@@ -218,7 +230,7 @@
           <svg id="target" class="live link2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="blink" d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" fill="currentColor" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C6.40848 3 1.71018 6.82432 0.378052 12C1.71018 17.1757 6.40848 21 12 21C17.5915 21 22.2898 17.1757 23.6219 12C22.2898 6.82432 17.5915 3 12 3ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" fill="currentColor" /></svg>
-            <div class="projects__card__image project2 link">
+            <div class="projects__card__image project2 link stay-same">
             </div>
             <div class="projects__card__texts">
               <div class="projects__card__info">          
@@ -230,7 +242,7 @@
         <div class="projects__card__container">
           <div class="projects__card__content">
           <svg id="target" class="live link3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C6.40848 3 1.71018 6.82432 0.378052 12C1.71018 17.1757 6.40848 21 12 21C17.5915 21 22.2898 17.1757 23.6219 12C22.2898 6.82432 17.5915 3 12 3ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" fill="currentColor" /></svg>
-            <div class="projects__card__image project3 link">
+            <div class="projects__card__image project3 link stay-same">
             </div>
             <div class="projects__card__texts">
               <div class="projects__card__info">          
@@ -242,7 +254,7 @@
         <div class="projects__card__container">
           <div class="projects__card__content">
           <svg id="target" class="live link4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C6.40848 3 1.71018 6.82432 0.378052 12C1.71018 17.1757 6.40848 21 12 21C17.5915 21 22.2898 17.1757 23.6219 12C22.2898 6.82432 17.5915 3 12 3ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" fill="currentColor" /></svg>
-            <div class="projects__card__image project4 link">
+            <div class="projects__card__image project4 link stay-same">
             </div>
             <div class="projects__card__texts">
               <div class="projects__card__info">          
@@ -254,7 +266,7 @@
         <div class="projects__card__container">
           <div class="projects__card__content">
           <svg id="target" class="live link5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C6.40848 3 1.71018 6.82432 0.378052 12C1.71018 17.1757 6.40848 21 12 21C17.5915 21 22.2898 17.1757 23.6219 12C22.2898 6.82432 17.5915 3 12 3ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" fill="currentColor" /></svg>
-            <div class="projects__card__image project5 link">
+            <div class="projects__card__image project5 link stay-same">
             </div>
             <div class="projects__card__texts">
               <div class="projects__card__info">          
@@ -266,7 +278,7 @@
         <div class="projects__card__container">
           <div class="projects__card__content">
            <svg id="target" class="live link6" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C6.40848 3 1.71018 6.82432 0.378052 12C1.71018 17.1757 6.40848 21 12 21C17.5915 21 22.2898 17.1757 23.6219 12C22.2898 6.82432 17.5915 3 12 3ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" fill="currentColor" /></svg>
-            <div class="projects__card__image project6 link">
+            <div class="projects__card__image project6 link stay-same">
             </div>
             <div class="projects__card__texts">
               <div class="projects__card__info">          
@@ -281,7 +293,7 @@
       <h1 class="contact__head ">Contact</h1>
       <div class="contact contact-trigger">
         <div class="contact__border ">
-          <div class="contact__image contact-trigger"></div>
+          <div class="contact__image contact-trigger stay-same"></div>
         <div class="contact__block ">
             <div class="contact__name__block ">
               <div class="contact__name__style ">
@@ -310,25 +322,25 @@
       <div class="socialmedia">
         <div class="socialmedia__container">
           <div class="socialmedia__card__content">
-            <div class="socialmedia__card__github mediaicons github ">
+            <div class="socialmedia__card__github mediaicons github stay-same">
             </div>
             </div>
           </div>
           <div class="socialmedia__container">
             <div class="socialmedia__card__content ">
-              <div class="socialmedia__card__vimeo mediaicons vimeo ">
+              <div class="socialmedia__card__vimeo mediaicons vimeo stay-same">
               </div>
               </div>
             </div>
             <div class="socialmedia__container">
               <div class="socialmedia__card__content ">
-                <div class="socialmedia__card__linkedin mediaicons linkedin ">
+                <div class="socialmedia__card__linkedin mediaicons linkedin stay-same">
                 </div>
                 </div>
               </div>
               <div class="socialmedia__container">
                 <div class="socialmedia__card__content ">
-                  <div class="socialmedia__card__photowebsite mediaicons  photowebsite">
+                  <div class="socialmedia__card__photowebsite mediaicons  photowebsite stay-same">
                   </div>
                   </div>
                 </div>

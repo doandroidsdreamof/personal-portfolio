@@ -10,43 +10,31 @@
     </div>
 */
 
-    $Inter: 'Inter', sans-serif;
-    $cardColor: rgb(23, 23, 23);
-    $bgColor: rgb(20, 20, 20);
-    $blue: #2196f3;
 
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
 
-.navigation{
-  
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-
-  &__flex{
+  &__flex {
     display: flex;
   }
-    &__list{
-        list-style: none;
-        color: rgba(255,255,255,0.50);
-        font-size: 0.90rem;
-        font-family: $Inter;
-        gap: 3rem;
-        display: flex;
-        cursor:pointer;
-        &__text{
-            display: inline-block;
-            transition:  all 700ms ease-in-out;
-            &:hover{
-              color: rgb(33, 150, 243,0.70);
-
-            }
-      
-
-        }
-            
+  &__list {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-family: $Inter;
+    gap: 3rem;
+    display: flex;
+    cursor: pointer;
+    &__text {
+      display: inline-block;
+      transition: all 700ms ease-in-out;
+      &:hover {
+        color: rgb(33, 150, 243, 0.7);
+      }
     }
-
-    
+  }
 }

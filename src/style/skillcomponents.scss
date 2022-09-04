@@ -1,13 +1,5 @@
-$bgColor: rgb(20, 20, 20);
-$cardColor: rgb(23, 23, 23);
-$textColor: #757575;
-$Inter: "Inter", sans-serif;
-$yellow: #DFFB6D;
-$blue: #2196f3;
-
 
 .skills {
-  //border: 2px solid white;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -19,21 +11,19 @@ $blue: #2196f3;
 
   
   &__card {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--card-border-color);
     border-radius: 10px;
     cursor: pointer;
     position: relative;
     flex: 1 0 25%;
     height: 100%;
-
     opacity: 0;
-
     transition:  all  ease-in
 
       
   }
   &__card__content{
-    background-color: $cardColor;
+    background-color: var(--card-color);
     border-radius: inherit;
     margin: 1px;
     position: relative;
@@ -42,8 +32,7 @@ $blue: #2196f3;
     padding: 0.50rem;
     object-fit: cover;
     height: 99%;
-
-  //transition:  all 400ms ease-in-out;
+    transition:  all 400ms ease-in-out;
 
   } 
   &__card__texts{
@@ -65,8 +54,6 @@ $blue: #2196f3;
     background-size: 20%;
     background-position: center;
     background-repeat: no-repeat;
-      //border:red 1px solid;
-
     
   }
   &__card__info{
@@ -82,7 +69,7 @@ $blue: #2196f3;
 // images of skill components
 
 .react{
-    background-image: url('../images/tools-logo/react-original.svg'); 
+ background-image: url('../images/tools-logo/react-original.svg'); 
 }
 
 .JavaScript{
@@ -124,12 +111,8 @@ $blue: #2196f3;
   .skills {
     flex-direction: column;
     
-    
-
   }
     }
-
-
     .skills__card:hover::before {
       opacity: 1;
     }
@@ -142,15 +125,15 @@ $blue: #2196f3;
       top: 0px;
       transition: opacity 500ms;
       width: 100%;
-          margin-top: auto;
+      margin-top: auto;
 
     }
     
     .skills__card::before  {
       background: radial-gradient(
         800px circle at var(--horizontical) var(--vertical), 
-        $blue,    
-      rgba(217,0,255,0.1),
+        var(--card-first-effect-color),    
+        var(--card-second-effect-color),
         transparent 30%
       );
       z-index: 2;
@@ -160,14 +143,11 @@ $blue: #2196f3;
     .skills__card::after{
       background: radial-gradient(
         800px circle at var(--horizontical) var(--vertical), 
-        $blue,         
-        rgba(217,0,255,0.1),
+        var(--card-first-effect-color),    
+        var(--card-second-effect-color),
         transparent 30%
       );
       z-index: 3;
-
-
-
 
     } 
 
