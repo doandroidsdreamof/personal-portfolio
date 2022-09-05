@@ -19,7 +19,10 @@ socialmedia__card__github mediaicons        projects__card__image github
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 2rem;
+  padding: 3rem 0rem;
+  transform: translateY(20%);
+  
+
   
   &__container {
     position: relative;
@@ -27,7 +30,6 @@ socialmedia__card__github mediaicons        projects__card__image github
   }
 
   &__card__content {
-    background-color: var(--bg-color);
     position: relative;
     z-index: 2;
     padding: 1rem;
@@ -40,6 +42,8 @@ socialmedia__card__github mediaicons        projects__card__image github
     border: 1px solid var(--card-border-color);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    box-shadow:  3px 3px 2px var(--card-box-shadow-first),
+    -3px -3px 2px var(--card-box-shadow-second);
     
     &:hover {
       border:  var(--blue-color) solid;
@@ -54,6 +58,7 @@ socialmedia__card__github mediaicons        projects__card__image github
 
   &__card__linkedin {
     background-image: url("../images/socialmedia-icons/linkedin.png");
+    filter: var(--linkedin-filter);
   }
 
   &__card__photowebsite {
@@ -76,6 +81,7 @@ socialmedia__card__github mediaicons        projects__card__image github
   object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
+  
 
   &:hover {
     opacity: 0.5;
@@ -90,7 +96,6 @@ socialmedia__card__github mediaicons        projects__card__image github
     place-items: center;
     scroll-snap-align: center;
     user-select: none;
-    background-color: var(--bg-color);
     position: relative;
     gap: 1rem;
     justify-items: center;
@@ -108,7 +113,6 @@ socialmedia__card__github mediaicons        projects__card__image github
     }
 
     &__card__content {
-      background-color: var(--bg-color);
       position: relative;
       z-index: 2;
       padding: 1rem;

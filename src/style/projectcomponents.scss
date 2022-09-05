@@ -1,32 +1,4 @@
 
-/* //blur//
-$primary: 	hsla(204, 56%, 15%,1)
-$float: 2.25rem
-$cubic : cubic-bezier(1,.85,.23,1.52)
-$jump: cubic-bezier(.5,2,0,1)
-
-$inner : $jump
-
-
-@mixin blur($i)
-		backdrop-filter: blur($i + rem)
-		-webkit-backdrop-filter: blur($i + rem)
-
-
-					opacity: 0
-					transition: all 400ms ease-out
-					border-radius: .8rem
-					position: absolute
-					height: 15rem
-					width: 15rem
-					background: rgba(255,255,255,.2)
-					@include blur(.4)
-					z-index: 0
-					top: 0
-					@include flex(center,center,row)
-
-
-          */
 .projects {
   width: 100%;
   place-items: center;
@@ -34,7 +6,6 @@ $inner : $jump
   user-select: none;
   margin-bottom: auto;
   padding: 0rem 15rem;
-  background-color: var(--bg-color);
 }
 .live {
   position: absolute;
@@ -196,6 +167,7 @@ $inner : $jump
     margin-bottom: auto;
     padding: 0rem 4rem;
 
+  
     .live {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -225,12 +197,15 @@ $inner : $jump
       padding: 1rem;
       object-fit: cover;
       min-width: 100%;
+
+
     }
     &__texts {
       color: var(--projects-card-live-color);
       text-align: left;
-      padding: 1rem 0.2rem;
+      padding: 1rem 0.20rem;
       font-size: 0.80rem;
+    
     }
     &__image {
       align-items: center;
@@ -242,7 +217,9 @@ $inner : $jump
     }
     &__info {
       text-align: left;
-      font-size: 12px;
+      font-size: 10px;
+      
+      
     }
   }
 }
@@ -306,6 +283,7 @@ $inner : $jump
       
  
     }
+  
 
  
   }

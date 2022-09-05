@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
   justify-content: center;
+  z-index: 50;
   &:hover{
 
     background-color: white;
@@ -123,4 +124,52 @@ button {
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+@media (max-width:480px){
+  .sidenav {
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    background-color:  rgba(255,255,255,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    right: 3%;
+    top: 10%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    &:hover{
+  
+      background-color: white;
+    }
+  
+    &.open {
+      height: 16rem;
+      width: 2rem;
+      transition: all 400ms ease-in-out;
+      gap: 1rem;
+    }
+    &__icons {
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      width: 0.8rem;
+      height: 0.8rem;
+      transition: all 400ms ease-in-out;
+      display: none;
+      padding: 0.70rem 0rem;
+      opacity: 0;
+      &.openlist {
+        display: inline-block;
+        width: 100%;
+        opacity: 1;
+      }
+
+    }}
 }

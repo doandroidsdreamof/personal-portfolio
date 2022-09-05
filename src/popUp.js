@@ -19,12 +19,12 @@ const popUpButtonColor = 'white';
 
 
 // Open popup //
+
 popUpButton.addEventListener('click',(e) =>{
 popUpButton.classList.add('expand');
 popUpText.style.display = "none";
 popUpButton.style.backgroundImage = "none";
 popUpButton.style.backgroundColor = `${popUpButtonColor}`;
-//popUpTop.style.background = "rgb(23, 23, 23)";
 languageButtons.style.display = "";
 popUpHead.style.display = "block";
 turkishButton.style.visibility = "visible";

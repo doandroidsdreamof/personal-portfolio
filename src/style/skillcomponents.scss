@@ -1,15 +1,13 @@
-
 .skills {
   position: relative;
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  width: 68.50%;
+  width: 68.5%;
   justify-items: center;
   margin-top: auto;
   flex-wrap: wrap;
 
-  
   &__card {
     background-color: var(--card-border-color);
     border-radius: 10px;
@@ -18,35 +16,29 @@
     flex: 1 0 25%;
     height: 100%;
     opacity: 0;
-    transition:  all  ease-in;
-    box-shadow:  10px 10px 10px var(--card-box-shadow-first),
-    -10px -10px 10px var(--card-box-shadow-second);
-
-
-      
+    transition: all ease-in;
+    box-shadow: 10px 10px 10px var(--card-box-shadow-first),
+      -10px -10px 10px var(--card-box-shadow-second);
   }
-  &__card__content{
+  &__card__content {
     background-color: var(--card-color);
     border-radius: inherit;
     margin: 1px;
     position: relative;
     z-index: 2;
     text-align: left;
-    padding: 0.50rem;
+    padding: 0.5rem;
     object-fit: cover;
     height: 99%;
-    transition:  all 400ms ease-in-out;
-
-  } 
-  &__card__texts{
-    padding: 1rem 0.20rem;
-
+    transition: all 400ms ease-in-out;
   }
-  &__card__header{
+  &__card__texts {
+    padding: 1rem 0.2rem;
+  }
+  &__card__header {
     font-size: 14px;
-    
   }
-  &__card__image{
+  &__card__image {
     align-items: center;
     border-radius: inherit;
     display: flex;
@@ -55,56 +47,44 @@
     background-size: 20%;
     background-position: center;
     background-repeat: no-repeat;
-    
   }
-  &__card__info{
-    font-family: 'Roboto', sans-serif;
+  &__card__info {
+    font-family: "Roboto", sans-serif;
     text-align: left;
     font-size: 12px;
-     
   }
 }
-
-
 
 // * images of skill components
 
-.react{
- background-image: url('../images/tools-logo/react-original.svg'); 
+.react {
+  background-image: url("../images/tools-logo/react-original.svg");
 }
 
-.JavaScript{
-  background-image: url('../images/tools-logo/javascript-plain.svg');
+.JavaScript {
+  background-image: url("../images/tools-logo/javascript-plain.svg");
 }
-.tailwind{
-  background-image: url('../images/tools-logo/tailwindcss-plain.svg');
+.tailwind {
+  background-image: url("../images/tools-logo/tailwindcss-plain.svg");
 }
-.node{
-  background-image: url('../images/tools-logo/nodejs-original.svg');
-
+.node {
+  background-image: url("../images/tools-logo/nodejs-original.svg");
 }
-.npm{
-  background-image: url('../images/tools-logo/npm-original-wordmark.svg');
-
+.npm {
+  background-image: url("../images/tools-logo/npm-original-wordmark.svg");
 }
-.git{
-  background-image: url('../images/tools-logo/git-original.svg');
-
+.git {
+  background-image: url("../images/tools-logo/git-original.svg");
 }
-.sass{
-  background-image: url('../images/tools-logo/sass-original.svg');
-
+.sass {
+  background-image: url("../images/tools-logo/sass-original.svg");
 }
-.webpack{
-  background-image: url('../images/tools-logo/webpack-original.svg');
-
+.webpack {
+  background-image: url("../images/tools-logo/webpack-original.svg");
 }
-.figma{
-  background-image: url('../images/tools-logo/figma-original.svg');
-
+.figma {
+  background-image: url("../images/tools-logo/figma-original.svg");
 }
-
-
 
 // * Responsive settings //
 
@@ -112,52 +92,46 @@
   .skills {
     flex-direction: column;
   }
-    }
-    .skills__card:hover::before {
-      opacity: 1;
-    }
-    
-    .skills__card::before {
-      border-radius: inherit;
-      content: "";
-      height: 100%;
-      position: absolute;
-      top: 0px;
-      transition: opacity 500ms;
-      width: 100%;
-      margin-top: auto;
+}
+.skills__card:hover::before {
+  opacity: 1;
+}
 
-    }
-    
-    .skills__card::before  {
-      background: radial-gradient(
-        800px circle at var(--horizontical) var(--vertical), 
-        var(--card-first-effect-color),    
-        var(--card-second-effect-color),
-        transparent 30%
-      );
-      z-index: 2;
+.skills__card::before {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+  margin-top: auto;
+}
 
-    }
+.skills__card::before {
+  background: radial-gradient(
+    800px circle at var(--horizontical) var(--vertical),
+    var(--card-first-effect-color),
+    var(--card-second-effect-color),
+    transparent 30%
+  );
+  z-index: 2;
+}
 
-    .skills__card::after{
-      background: radial-gradient(
-        800px circle at var(--horizontical) var(--vertical), 
-        var(--card-first-effect-color),    
-        var(--card-second-effect-color),
-        transparent 30%
-      );
-      z-index: 3;
+.skills__card::after {
+  background: radial-gradient(
+    800px circle at var(--horizontical) var(--vertical),
+    var(--card-first-effect-color),
+    var(--card-second-effect-color),
+    transparent 30%
+  );
+  z-index: 3;
+}
 
-    } 
-
-    @media (max-width: 320px) {
-      .skills {
-        flex-direction: column;
-        margin-top: 10rem;
-        overflow: hidden;
-   
-    
-      }
-        }
-    
+@media (max-width: 320px) {
+  .skills {
+    flex-direction: column;
+    margin-top: 10rem;
+    overflow: hidden;
+  }
+}

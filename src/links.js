@@ -3,13 +3,12 @@ import engPdf from '../src/resume/Berkay Kuytuoğlu Resume.pdf'
 
 // Dom Variables //
 
-const allImageClass = document.querySelectorAll('.projects__card__image');
 const allImageAndSvgClass = document.querySelectorAll('.link');
 const allSvg = document.querySelectorAll('.live');
 const allSkillsCard = document.querySelectorAll('.skills__card');
-const englishButton = document.querySelector('.popup__languagebuttons__english')
-const turkishButton = document.querySelector('.popup__languagebuttons__türkçe')
 const resumeButtons = document.querySelectorAll('.resume');
+const socialMedia = document.querySelectorAll('.mediaicons');
+
 
 // Open links projects //
 
@@ -137,16 +136,46 @@ resumeButtons.forEach(items => {
     const handleLinks = target.classList["0"];
     console.log(handleLinks)
     if (handleClicks === 0 || handleClicks === 1) {
-    switch (handleLinks) {
-      case "popup__languagebuttons__türkçe":
-        window.open(trPdf);
-        break;
-      case "popup__languagebuttons__english":
-        window.open(engPdf);
-        break;
-    }
+      switch (handleLinks) {
+        case "popup__languagebuttons__türkçe":
+          window.open(trPdf);
+          break;
+        case "popup__languagebuttons__english":
+          window.open(engPdf);
+          break;
+      }
     }
   })
 })
+
+
+// Social Media Links //
+
+socialMedia.forEach(items => {
+  items.addEventListener('mouseup', (e) => {
+    e.stopPropagation()
+    const target = e.target;
+    const handleClicks = e.button;
+    const handleLinks = target.classList["2"];
+    console.log(handleLinks)
+    if (handleClicks === 0 || handleClicks === 1) {
+      switch (handleLinks) {
+        case "photowebsite":
+          window.open('https://berkaykuytuoglu.com/');
+          break;
+        case "linkedin":
+          window.open('https://www.linkedin.com/in/berkay-kuytuo%C4%9Flu-57b393247/');
+          break;
+        case "vimeo":
+          window.open('https://vimeo.com/user56201227');
+          break;
+        case "github":
+          window.open('https://github.com/doandroidsdreamof');
+          break;
+      }
+    }
+  })
+})
+
 
 

@@ -9,26 +9,3 @@ darkModeButton.addEventListener('click', () => {
 });
 
 
-/*
-
-
-
-       <div class="sidenav__list2 sidenav__icons"></div>
-            <div class="sidenav__list3 sidenav__icons"></div>
-            <div class="sidenav__list4 sidenav__icons"></div>
-            <div class="sidenav__list5 sidenav__icons"></div>    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/

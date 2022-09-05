@@ -15,8 +15,8 @@ const projectsContainer = document.getElementById('mainsprojects')
 skillsContainer.addEventListener('mousemove', (e) => {
     for (let i = 0; i < allCards.length; i++) {
         const trace = allCards[i].getBoundingClientRect();
-        horizontical = e.clientX - trace.left;
-        vertical = e.clientY - trace.top;
+        let horizontical = e.clientX - trace.left;
+        let vertical = e.clientY - trace.top;
         allCards[i].style.setProperty("--horizontical", `${horizontical}px`);
         allCards[i].style.setProperty("--vertical", `${vertical}px`);
     }
@@ -38,8 +38,8 @@ projectsContainer.addEventListener('mousemove', (e) => {
     const target = e.target;
     for (let i = 0; i < allProjectsCard.length; i++) {
         const trace = allProjectsCard[i].getBoundingClientRect();
-        horizontical = e.clientX - trace.left;
-        vertical = e.clientY - trace.top;
+        let horizontical = e.clientX - trace.left;
+        let vertical = e.clientY - trace.top;
         allProjectsCard[i].style.setProperty("--horizontical", `${horizontical}px`);
         allProjectsCard[i].style.setProperty("--vertical", `${vertical}px`);
         if(target.matches('.live') || target.matches('.projects__card__image')){

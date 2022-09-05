@@ -1,6 +1,7 @@
 // Dom Variables //
 const upButton = document.querySelector('.scroll__up');
 
+// Scroll Up //
 
 window.addEventListener('scroll', () => {
   window.scrollY > 100 ? upButton.style.display = "block" : upButton.style.display = "none";
@@ -17,4 +18,9 @@ const scrollUpButton = () => {
   });
 
 }
+
+
+
+
+
 scrollUpButton()

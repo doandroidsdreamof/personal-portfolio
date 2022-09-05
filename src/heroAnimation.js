@@ -1,10 +1,6 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-const buttonResume = document.querySelector('.hero__container__button')
-
-
-
 gsap.registerPlugin(ScrollTrigger)
 ScrollTrigger.defaults({
   scrub: 3,
@@ -12,7 +8,6 @@ ScrollTrigger.defaults({
 
 
 })
-
 
 window.addEventListener('load',()=>{
 let tl = gsap.timeline({defaults: {ease: "power4.inOut", duration: 1}})
