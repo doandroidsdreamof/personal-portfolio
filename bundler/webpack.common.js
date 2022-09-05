@@ -48,6 +48,11 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(pdf)$/,
+                use: 'file-loader?name=[path][name].[ext]',
+                
+            },
+            {
                 test: /\.s[ac]ss$/i,
                 use: [
                   // Creates `style` nodes from JS strings
@@ -73,6 +78,7 @@ module.exports = {
                     }
                 ]
             },
+            
 
             // Shaders
             {

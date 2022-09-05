@@ -3,7 +3,6 @@
 @import './projectcomponents.scss';
 @import './noise.scss';
 @import './skillcomponents.scss';
-@import './navbar.scss';
 @import './hero.scss';
 @import './animation.scss';
 @import './popup.scss';
@@ -23,7 +22,6 @@
   --card-border-color: rgba(255, 255, 255, 0.2);
   --text-color: #757575;
   --hero-bio-color: #697887;
-
   // Popup Button //
   --popup-hover-bg-color: rgb(33, 150, 243, 0.8);
   --popup-button-color: white;
@@ -31,20 +29,19 @@
   --popup-language-button-color: black;
   --popup-language-button-hover-color: rgba(0, 0, 0, 0.91);
   --popup-button-bg-color: #2196f3;
-
   // Scroll Up Button //
-
   --scroll-up-color: rgba(255, 255, 255, 0.6);
   --scroll-up--hover-color:white;
   // Side Nav Bar //
-
   --hamburger-menu-hover-color: rgba(255, 255, 255, 0.4);
   --side-nav-head-color: white;
   --hamburger-color: rgba(255, 255, 255, 0.8);
   --side-nav-container-color: #141414;
+  --side-nav-hover: rgba(5, 25, 25, 0.4);
+
+
 
   // Projects Card //
-  
   --card-first-effect-color: #2196f3;
   --card-second-effect-color: rgba(217, 0, 255, 0.1);
   --projects-card-container-text-color: rgb(240, 240, 240);

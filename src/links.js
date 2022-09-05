@@ -1,10 +1,18 @@
+import trPdf from '../src/resume/Berkay Kuytuoğlu Öz Geçmiş.pdf'
+import engPdf from '../src/resume/Berkay Kuytuoğlu Resume.pdf'
+
 // Dom Variables //
+
 const allImageClass = document.querySelectorAll('.projects__card__image');
 const allImageAndSvgClass = document.querySelectorAll('.link');
 const allSvg = document.querySelectorAll('.live');
 const allSkillsCard = document.querySelectorAll('.skills__card');
+const englishButton = document.querySelector('.popup__languagebuttons__english')
+const turkishButton = document.querySelector('.popup__languagebuttons__türkçe')
+const resumeButtons = document.querySelectorAll('.resume');
 
 // Open links projects //
+
 allImageAndSvgClass.forEach(item => {
   item.addEventListener('mouseup', (e) => {
     e.stopPropagation()
@@ -115,6 +123,28 @@ allSkillsCard.forEach(item => {
           window.open("https://www.figma.com/");
           break;
       }
+    }
+  })
+})
+
+// Resume PDF download //
+
+resumeButtons.forEach(items => {
+  items.addEventListener('mouseup', (e) => {
+    e.stopPropagation()
+    const target = e.target;
+    const handleClicks = e.button;
+    const handleLinks = target.classList["0"];
+    console.log(handleLinks)
+    if (handleClicks === 0 || handleClicks === 1) {
+    switch (handleLinks) {
+      case "popup__languagebuttons__türkçe":
+        window.open(trPdf);
+        break;
+      case "popup__languagebuttons__english":
+        window.open(engPdf);
+        break;
+    }
     }
   })
 })

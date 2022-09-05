@@ -111,7 +111,6 @@
 @media (max-width: 720px) {
   .skills {
     flex-direction: column;
-    
   }
     }
     .skills__card:hover::before {
@@ -157,6 +156,7 @@
         flex-direction: column;
         margin-top: 10rem;
         overflow: hidden;
+   
     
       }
         }

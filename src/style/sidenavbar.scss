@@ -1,102 +1,109 @@
-
-
 .sidenav {
-  display: flex;
-  flex-flow: row nowrap;
-  resize: none;
-  overflow: hidden;
-  width: 17em;
-  max-width: 30%;
+  transition: all 0.5s ease-in-out;
   position: fixed;
-  height: 100vh;
-  margin-top: -3rem;
-  font-family: $Inter;
-  &__block {
-    padding: 2rem;
-  }
-  &__header {
-    color:  var(--side-nav-head-color);
-  }
-  &__list {
-    flex: 0 auto;
-    min-width: $iconWidth;
-    width: $sidenavWidth;
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    list-style: none;
-    transition: width $duration $timing;
-    transition: all 300ms ease-in;
-    transform: translateX(-10rem);
+  background-color:  rgba(255,255,255,0.5);
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  right: 3%;
+  top: 10%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  &:hover{
 
-    &.is-collapsed {
-      width: $sidenavWidth * 0;
-      transform: translateX(0rem);
-      position: relative;
-    }
-    &.is-active {
-      border-color: var(--hamburger-color) solid;
-      &:before {
-        transform: translate(-50%, -50%) rotate(45deg);
-      }
+    background-color: white;
+  }
 
-      &:after {
-        transform: translate(-50%, -50%) rotate(-45deg);
-        
-      }
+  &.open {
+    height: 18rem;
+    width: 3rem;
+    transition: all 400ms ease-in-out;
+    gap: 1rem;
+  }
+  &__icons {
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 0.8rem;
+    height: 0.8rem;
+    transition: all 400ms ease-in-out;
+    display: none;
+    padding: 1rem 0rem;
+    opacity: 0;
+    &.openlist {
+      display: inline-block;
+      width: 100%;
+      opacity: 1;
     }
-    &__text {
-      cursor: pointer;
-      transition: width $duration $timing;
-      transition: all 300ms ease-in;
-      width: $sidenavWidth;
-      transform: translateX(1rem);
-  
 
-      &:hover {
-        background-color: var(--hamburger-menu-hover-color);
-        color: var(--hamburger-color);
-      }
+    &:hover {
+      background-color: var(--side-nav-hover);
     }
   }
-  &__container {
-    display: flex;
-    flex-flow: column nowrap;
-    background: var(--side-nav-container-color);
-    flex: 0 1 auto;
-    width: $sidenavWidth;
-    max-width: 100%;
-    height: 100vh;
-    position: fixed;
-    transition: width $duration $timing;
-    transition: all 300ms ease-in;
-    &.is-collapsed {
-      width: $sidenavWidth * 0;
+  &__list1 {
+    background-image: url("../images/navbar-icons/sun.svg");
+    &.moon {
+      background-image: url("../images/navbar-icons/moon.svg");
     }
   }
+  &__list2 {
+    background-image: url("../images/navbar-icons/home.svg");
+  }
+  &__list3 {
+    background-image: url("../images/navbar-icons/tool.svg");
+  }
+  &__list4 {
+    background-image: url("../images/navbar-icons/eye.svg");
+  }
+  &__list5 {
+    background-image: url("../images/navbar-icons/send.svg");
+  }
+
+  &.is-active {
+    //border-color: var(--hamburger-color) solid;
+
+    &:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
   &__hamburger {
     position: relative;
-    display: block;
+    //display: block;
     width: $buttonWidth;
     height: $buttonHeight;
     background: transparent;
-    border-top: $lineThickness solid ; 
+    border-top: $lineThickness solid;
     border-bottom: $lineThickness solid;
-    color: var(--hamburger-color);
+    //color: var(--hamburger-color);
     transition: all $transitionSpeed $transitionEasing;
-    margin-bottom: 2rem;
-    margin: 2rem;
+    //margin-bottom: 2rem;
+    //margin: 2rem;
+    color: black;
+    z-index: 50;
+
     &:before,
     &:after {
       content: "";
-      display: block;
+      //display: block;
       width: 100%;
       height: $lineThickness;
       position: absolute;
-      top: 50%;
+      //top: 50%;
       left: 50%;
-      background-color:var(--hamburger-color);
-      background: (--hamburger-color);
+      background-color: black;
+
+      //background-color:var(--hamburger-color);
+      //background: (--hamburger-color);
       transform: translate(-50%, -50%);
       transition: transform $transitionSpeed $transitionEasing;
     }

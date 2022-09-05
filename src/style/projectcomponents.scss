@@ -230,6 +230,7 @@ $inner : $jump
       color: var(--projects-card-live-color);
       text-align: left;
       padding: 1rem 0.2rem;
+      font-size: 0.80rem;
     }
     &__image {
       align-items: center;
@@ -273,13 +274,39 @@ $inner : $jump
     scroll-snap-align: center;
     user-select: none;
     margin: auto;
-    padding: 0rem 1rem;
+
 
     &__card {
       display: grid;
       justify-items: center;
       grid-template-columns: auto;
       margin-top: 4rem;
+      min-width: 100%;
+      padding: 0.40rem;
+
+
     }
+    &__container {
+      background-color: var(--card-border-color);
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      min-height: 40%;
+    }
+    &__content {
+      background-color: var(--card-color);
+      border-radius: inherit;
+      margin: 1px;
+      position: relative;
+      z-index: 2;
+      text-align: left;
+      padding: 1rem;
+      object-fit: cover;
+
+      
+ 
+    }
+
+ 
   }
 }

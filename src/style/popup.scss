@@ -17,11 +17,10 @@
 
   }
   &__button {
-
     height: 2.5rem;
     overflow: hidden;
     position: absolute;
-    width: 19%;
+    width: 18%;
     -webkit-tap-highlight-color: transparent;
     transition: width $popUpOpen;
     height: $popUpOpen;
@@ -59,7 +58,7 @@
       font-weight: 400;
       font-size: 0.90rem;
       color: var(--popup-button-color);
-      font-size: 16px;
+      font-size: 0.90rem;
       letter-spacing: -2%;
       display: inline-block;
       transform: translateY(10px);

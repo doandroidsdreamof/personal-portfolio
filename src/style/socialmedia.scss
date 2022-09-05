@@ -95,16 +95,16 @@ socialmedia__card__github mediaicons        projects__card__image github
     gap: 1rem;
     justify-items: center;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     padding: 0rem 4rem;
-
 
     &__container {
       position: relative;
       justify-content: center;
       display: flex;
+      flex-direction: row;
     }
 
     &__card__content {
@@ -121,6 +121,8 @@ socialmedia__card__github mediaicons        projects__card__image github
       border: 1px solid var(--card-border-color);
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
+      flex: 1 0 50%;
+  
       &:hover {
         border: var(--blue-color) solid;
       }

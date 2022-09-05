@@ -12,37 +12,15 @@
   <body id="scroll" class="">
     <div id="container" class="container ">
       <nav>
-        <div class="navigation">
-          <div class="navigation__flex">
-          <ul class="navigation__list">
-            <li class="navigation__list__text">Skills</li>
-            <li class="navigation__list__text">Projects</li>
-            <li class="navigation__list__text">Contact</li>
-          </ul>
-        </div> 
-      </nav>
-      <main>
-        <div class="sidenav">
-          <div id="sidenav" class="sidenav__container ">
-            <header class="sidenav__header">
-              <div class="sidenav__block">
-              <button class="sidenav__hamburger"></button>
-            <ul class="sidenav__list">
-              <li class="sidenav__list__text">Dark</li>
-              <li class="sidenav__list__text">Skills</li>
-              <li class="sidenav__list__text">Projects</li>
-              <li class="sidenav__list__text">Contact</li>
-              <li class="sidenav__list__text">Github</li>
-              <li class="sidenav__list__text">Vimeo</li>
-              <li class="sidenav__list__text">Linkedin</li>
-              <li class="sidenav__list__text">Photos</li>   
-            </ul>
-          </div>
-          </header>
-            </nav>
-            </div>
-          </div>
-      </main>
+        <div id="sidenav" class="sidenav">
+          <button class="sidenav__hamburger"></button>
+            <div class="sidenav__list1 sidenav__icons"></div>
+            <div class="sidenav__list2 sidenav__icons"></div>
+            <div class="sidenav__list3 sidenav__icons"></div>
+            <div class="sidenav__list4 sidenav__icons"></div>
+            <div class="sidenav__list5 sidenav__icons"></div>      
+        </div>
+      </nav> 
      <section class="hero">
       <div class="hero__container">
       <h1 class="hero__container__head"><span>Hi There I'm Berkay <br> Web</span> Developer</h1>
@@ -53,9 +31,9 @@
         <div class="popup__button" >
            <span class="popup__button__text ">Download Resume</span>
            <div class="popup__languagebuttons">
-            <button class="popup__languagebuttons__türkçe">Türkçe</button> 
-            <button class="popup__languagebuttons__english">English</button>
-           </div>
+            <button type="submit" class="popup__languagebuttons__türkçe resume">Türkçe</button> 
+            <button type="submit" class="popup__languagebuttons__english resume">English</button>
+          </div>
           <div class="popup__module">
             <h3 class="popup__head "></h3>
             <div class="popup__module__content ">
@@ -84,7 +62,6 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
   aria-label="Expand"
-
 >
   <path
     d="M14.8284 12.7071L16.2426 11.2929L12 7.05027L7.75739 11.2929L9.1716 12.7071L12 9.87869L14.8284 12.7071Z"
@@ -207,7 +184,7 @@
         </div>        
       </div>
     </section>
-     <section class="projects ">
+     <main class="projects ">
       <h1 class="projects__card__head">Projects</h1>
       <div id="mainsprojects" class="projects__card">
         <div class="projects__card__container">
@@ -288,7 +265,7 @@
           </div>
         </div> 
      </div> 
-     </section>
+     </main>
      <section class="section section__contact">
       <h1 class="contact__head ">Contact</h1>
         <div class="contact__border ">
@@ -347,3 +324,4 @@
       </section>
   </body>
 </html>
+

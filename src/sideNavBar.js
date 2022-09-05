@@ -1,17 +1,25 @@
 // Dom Variables //
 const toggleButton = document.querySelector('.sidenav__hamburger');
-const navBarList = document.querySelector('.sidenav__list');
 const openNav = document.getElementById("sidenav");
+const allItem = document.querySelectorAll('.sidenav__icons');
 
 const container = document.getElementById('container')
 // Colors //
 
 
+
+
+
 toggleButton.addEventListener('click',() =>{
-  const element = document.getElementById("sidenav");
-  element.classList.toggle("is-collapsed");
+  //const element = document.getElementById("sidenav");
+  //element.classList.toggle("is-collapsed");
   toggleButton.classList.toggle('is-active');
-  navBarList.classList.toggle('is-collapsed');
+  //navBarList.classList.toggle('is-collapsed');
+  openNav.classList.toggle('open');
+for(let x in allItem){
+  allItem[x].classList.toggle('openlist')
+}
+
 })
 
 
@@ -27,4 +35,3 @@ function collapse(){
   navBarList.classList.add('is-collapsed');
 
 }
-
