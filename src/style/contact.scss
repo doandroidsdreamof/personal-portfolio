@@ -101,6 +101,11 @@ textarea {
   box-shadow:
   inset 2px 2px 4px var(--textarea-box-shadow-first),
   inset -2px -2px 4px var(--textarea-box-shadow-second);
+  &:focus{
+    box-shadow:
+      inset 4px 4px 4px var(--textarea-box-shadow-first),
+      inset -4px -4px 4px var(--textarea-box-shadow-second);
+  }
 }
 textarea {
   min-height: 15em;

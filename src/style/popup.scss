@@ -1,4 +1,3 @@
-
 .popup {
   align-items: center;
   display: flex;
@@ -8,25 +7,17 @@
   width: 100%;
   font-family: $Inter;
 
-  &__head {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 90%;
-    display: flex;
-    left: 50%;
-    justify-content: center;
-    transform: translate(-50%, 23px);
-    align-self: center;
-    text-align: center;
-  }
+  
   &__languagebuttons {
     width: inherit;
     height: inherit;
     position: absolute;
     display: flex;
     justify-content: space-around;
+
   }
   &__button {
+
     height: 2.5rem;
     overflow: hidden;
     position: absolute;
@@ -43,8 +34,9 @@
     z-index: 50;
     background-color: var(--popup-button-bg-color);
     transition: all 400ms ease-in-out;
-
     cursor: pointer;
+
+
     &__button:before {
       width: 400px;
       height: 550px;
@@ -57,6 +49,7 @@
       background: inherit;
       filter: blur($blur);
 
+      
     }
     &:hover {
       background-color: var(--popup-hover-bg-color);
@@ -64,28 +57,33 @@
     &__text {
       font-family: $Inter;
       font-weight: 400;
-      font-size: 1rem;
+      font-size: 0.90rem;
       color: var(--popup-button-color);
       font-size: 16px;
       letter-spacing: -2%;
       display: inline-block;
       transform: translateY(10px);
       transition: all 400ms ease-in-out;
+
+
     }
     &.expand {
-      box-shadow:  20px 20px 60px #bebebe,
-      -20px -20px 60px #ffffff;
+      //box-shadow:  20px 20px 60px #bebebe,
+      //-20px -20px 60px #ffffff;
       height: 18rem;
       width: 450px;
+
     }
+
     &:not(.expand) {
       cursor: pointer;
+
     }
   }
   &__module {
     opacity: 0;
     position: absolute;
-    transition: opacity 300ms cubic-bezier(4, 0, 5, 4);
+  
   }
   &__module__content {
     transform-origin: 0 0;
@@ -98,12 +96,13 @@
     max-height: 50%;
     width: 100%;
     background-repeat: no-repeat;
+    
   }
   &__module__top {
     display: flex;
     flex-direction: row;
     height: 50px;
-    transition: height $popUpOpen;
+    transition: height $popUpOpen;      
     width: fit-content;
   }
   &__module__close {
@@ -116,6 +115,8 @@
     position: relative;
     flex-direction: row;
     justify-content: flex-end;
+    
+
   }
   &__module__close__lines {
     border-radius: 10px;
@@ -163,9 +164,9 @@
       transition: all 600ms ease-in-out;
       text-align: center;
       visibility: hidden;
-      
+
       &:hover {
-        background-color:var(--popup-language-button-hover-color);
+        background-color: var(--popup-language-button-hover-color);
         color: white;
       }
     }
@@ -174,9 +175,12 @@
 .expand .popup__module {
   opacity: 1;
   transition: opacity 200ms 100ms cubic-bezier(0, 0, 0.2, 1);
+
+
 }
 .expand .popup__module__content {
   transform: scale(1);
+
 }
 
 // responsive settings //
@@ -196,16 +200,14 @@ popup__module__close__lines
 popup__module__line
 */
 
-
 // Responsive Settings //
 @media (max-width: 770px) {
   .popup {
-    &__head {
-      font-size: 1.5rem;
-      left: 45%;
-    }
     &__button {
       min-width: 35%;
+      &__text{
+        font-size: 0.80rem;
+      }
       &.expand {
         max-width: 80%;
         display: flex;
@@ -251,12 +253,11 @@ popup__module__line
 }
 @media (max-width: 482px) {
   .popup {
-    &__head {
-      font-size: 1.5rem;
-      left: 45%;
-    }
     &__button {
-      min-width: 60%;
+      min-width: 50%;
+      &__text{
+        font-size: 0.80rem;
+      }
       &.expand {
         max-width: 70%;
         height: 240px;
@@ -317,5 +318,84 @@ popup__module__line
         background-repeat: no-repeat;
       }
     }
+  }
+}
+
+//* Popup Oppen Animation //
+
+@keyframes circle {
+  0% {
+    clip-path: circle(6% at 50% 50%);
+  }
+  10% {
+    clip-path: circle(9.1% at 50% 50%);
+  }
+  20% {
+    clip-path: circle(11.2% at 50% 50%);
+  }
+
+  30% {
+    clip-path: circle(15.4% at 50% 50%);
+  }
+  40% {
+    clip-path: circle(24.3% at 50% 50%);
+  }
+  50% {
+    clip-path: circle(28.1% at 50% 50%);
+  }
+  60% {
+    clip-path: circle(31.9% at 50% 50%);
+  }
+  70% {
+    clip-path: circle(37.2% at 50% 50%);
+  }
+  80% {
+    clip-path: circle(46.4% at 50% 50%);
+  }
+  90% {
+    clip-path: circle(54% at 50% 50%);
+  }
+
+  100% {
+    clip-path: circle(70.7% at 50% 50%);
+  }
+}
+
+
+@keyframes close {
+  100% {
+    clip-path: circle(6% at 50% 50%);
+  }
+  90% {
+    clip-path: circle(9.1% at 50% 50%);
+  }
+  80% {
+    clip-path: circle(11.2% at 50% 50%);
+  }
+
+  70% {
+    clip-path: circle(15.4% at 50% 50%);
+  }
+  60% {
+    clip-path: circle(24.3% at 50% 50%);
+  }
+  50% {
+    clip-path: circle(28.1% at 50% 50%);
+  }
+  40% {
+    clip-path: circle(31.9% at 50% 50%);
+  }
+  30% {
+    clip-path: circle(37.2% at 50% 50%);
+  }
+  20% {
+    clip-path: circle(46.4% at 50% 50%);
+  }
+  10% {
+    clip-path: circle(54% at 50% 50%);
+  }
+
+  0% {
+    clip-path: circle(70.7% at 50% 50%);
   }
 }
