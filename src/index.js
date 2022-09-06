@@ -1,8 +1,8 @@
 import "./style/style.scss";
+import "./heroAnimation";
 import "./light";
 import "./links";
 import "./hover";
-import "./heroAnimation";
 import "./popUp";
 import "./animation";
 import "./scrollUp";
