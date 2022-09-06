@@ -58,50 +58,74 @@ const engButtonText = document.querySelector('.popup__languagebuttons__english')
 
 // Contact Labels //
 const labelName = document.querySelector('.label__name');
-const labelMail = document.querySelector('.label__mail');
+const labelMail = document.querySelector('.label__email');
 const labelMessage = document.querySelector('.label__message');
 const submitMessage = document.querySelector('.send__message');
 
 // Projects Texts //
-const textProjectOne = document.querySelector('.label__name');
-const textProjectTwo = document.querySelector('.label__mail');
-const textProjectThree = document.querySelector('.label__message');
-const textProjectFour = document.querySelector('.send__message');
-const textProjectFive = document.querySelector('.send__message');
-const textProjectSix = document.querySelector('.send__message');
+const textProjectOne = document.querySelector('.text__one');
+const textProjectTwo = document.querySelector('.text__two');
+const textProjectThree = document.querySelector('.text__three');
+const textProjectFour = document.querySelector('.text__four');
+const textProjectFive = document.querySelector('.text__five');
+const textProjectSix = document.querySelector('.text__six');
+
+// Section Texts //
+const textSkills = document.querySelector('.languages__head')
+const textProjects = document.querySelector('.projects__card__head')
+const textContact = document.querySelector('.contact__head')
 
 
+translateButton.addEventListener('click', () => {
+  const logic = bodyToggleLang.classList;
+  if (logic.contains('eng')) {
+    logic.replace('eng', 'tr')
+    heroHead.innerHTML = '<span>' + "Web üzerine çözüm " + '</span>' + '<br>' + "üretirim";
+    heroText.innerHTML = 'Merhaba, ben Berkay. Programlama üzerine yeni şeyler öğrenmekle ve problemler çözmekle haşır neşirim.';
+    buttonText.innerHTML = 'Öz Geçmişi Görüntüle';
+    trButtonText.innerHTML = 'Türkçe';
+    engButtonText.innerHTML = 'İngilizce';
+    textSkills.innerHTML = 'BECERİLER';
+    textProjects.innerHTML = 'PROJELER';
+    textContact.innerHTML = 'İLETİŞİM';
+    labelName.innerHTML = 'İsim';
+    labelMail.innerHTML = 'E-posta';
+    labelMessage.innerHTML = 'Mesaj';
+    submitMessage.innerHTML = 'Mesaj Gönder';
+    textProjectOne.innerHTML = 'Youtube Kanalına Yüklenen Son Videoyu Paylaşan Telegram Botu';
+    textProjectTwo.innerHTML = 'Ülke Bayrakları ve Bilgileri Üzerine Tek Sayfa Uygulaması';
+    textProjectThree.innerHTML = 'Yapılacaklar Listesi Web Uygulaması';
+    textProjectFour.innerHTML = 'E-ticaret Sitesi Ürün Sayfası';
+    textProjectFive.innerHTML = 'IP Adresi Arama Uygulaması';
+    textProjectSix.innerHTML = 'Loopstudios Web Sayfası';
 
-translateButton.addEventListener('click',() =>{
- const logic =  bodyToggleLang.classList; 
-if(logic.contains('eng')){
-  logic.replace('eng','tr')
-  heroHead.innerHTML = '<span>' + "Web üzerine çözüm "  + '</span>' + '<br>' + "üretirim" ;
-  heroText.innerText = 'Merhaba, ben Berkay. Programlama üzerine yeni şeyler öğrenmekten ve problem çözmekten keyif alıyorum.';
-  buttonText.innerText = 'Öz Geçmişi Görüntüle';
-  trButtonText.innerText = 'Türkçe';
-  engButtonText.innerText = 'İngilizce';
-  skillsSection.innerText = 'BECERİLER';
-}
-else if(logic.contains('tr')){
-  logic.replace('tr','eng')
-  heroHead.innerHTML = '<span>' + "I solve problems" + '<br>' + "for the" + '</span>' + "web";
-  heroText.innerText = "Hi there, I'm Berkay. I'm a self-taught, enthusiastic web developer who enjoys learning new things and solving problems.";
-  buttonText.innerText = 'Download Resume';
-  trButtonText.innerText = 'Turkish';
-  engButtonText.innerText = 'English';
-}
+  }
+  else if (logic.contains('tr')) {
+    logic.replace('tr', 'eng')
+    heroHead.innerHTML = '<span>' + "I solve problems" + '<br>' + "for the" + '</span>' + " Web";
+    heroText.innerHTML = "Hi there, I'm Berkay. I'm a self-taught, enthusiastic web developer who enjoys learning new things and solving problems.";
+    buttonText.innerHTML = 'Download Resume';
+    trButtonText.innerHTML = 'Turkish';
+    engButtonText.innerHTML = 'English';
+    textSkills.innerHTML = 'SKILLS';
+    textProjects.innerHTML = 'PROJECTS';
+    textContact.innerHTML = 'CONTACT';
+    labelName.innerHTML = 'Name';
+    labelMail.innerHTML = 'Email';
+    labelMessage.innerHTML = 'Message';
+    submitMessage.innerHTML = 'Send Message';
+    textProjectOne.innerHTML = 'Telegram Bot, It Shares Last Video From YouTube Channels';
+    textProjectTwo.innerHTML = 'Rest Countries Single Page Application';
+    textProjectThree.innerHTML = 'To Do List Web App';
+    textProjectFour.innerHTML = 'E-commerce Product Page';
+    textProjectFive.innerHTML = 'IP Address Tracker';
+    textProjectSix.innerHTML = 'Loopstudios Landing Page';
+  }
 
-console.log(bodyToggleLang)
+
 })
 
 
 
 
-/*
-skillsSection
-projectsSection
-contactSection
 
-
-  */
