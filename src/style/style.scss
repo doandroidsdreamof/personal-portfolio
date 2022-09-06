@@ -121,12 +121,14 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: var(--bg-color);
+  background: var(--bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   font-family: "Inter", sans-serif;
   transition: background 200ms ease-in-out;
+
+
 }
 
 .section {
@@ -137,7 +139,7 @@ body {
   user-select: none;
   margin: auto;
   padding: 8rem 0rem;
-  transition: background 200ms ease-in-out;
+
 
  
 }
@@ -175,6 +177,8 @@ h2 {
   clip-path: $polygonReveal;
   margin-top: 5rem;
 }
+
+
 
 // Responsive settings //
 
@@ -217,3 +221,5 @@ h2 {
       
     }
   
+
+

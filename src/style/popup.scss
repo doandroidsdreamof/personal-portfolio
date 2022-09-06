@@ -67,10 +67,11 @@
 
     }
     &.expand {
-      //box-shadow:  20px 20px 60px #bebebe,
-      //-20px -20px 60px #ffffff;
+      box-shadow: 10px 10px 10px var(--card-box-shadow-first),
+      -10px -10px 10px var(--card-box-shadow-second);
       height: 18rem;
       width: 450px;
+      animation: circle .3s ease-in normal;
 
     }
 
@@ -87,7 +88,6 @@
   &__module__content {
     transform-origin: 0 0;
     transition: transform $popUpOpen;
-    //border: 2px solid yellow;
     background-image: url("../images/popup-images/popup-image.jpg");
     background-size: 100%;
     background-position: 0% 40%;
@@ -139,7 +139,6 @@
   }
 
   &__languagebuttons {
-    //border: 2px solid red;
     width: 100%;
     height: 100%;
     display: flex;
@@ -182,22 +181,6 @@
 
 }
 
-// responsive settings //
-
-/*
-popup
-popup__button 
-popup__button__text
-popup__languagebuttons
-türkçe
-english
-popup__module
-popup__module__content
-popup__module__top
-popup__module__close
-popup__module__close__lines
-popup__module__line
-*/
 
 // Responsive Settings //
 @media (max-width: 770px) {
@@ -361,23 +344,7 @@ popup__module__line
       padding: 0rem 0.7rem;
       gap: 5px;}
     
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
+}}
 
 
 //* Popup Oppen Animation //
@@ -421,40 +388,4 @@ popup__module__line
 }
 
 
-@keyframes close {
-  100% {
-    clip-path: circle(6% at 50% 50%);
-  }
-  90% {
-    clip-path: circle(9.1% at 50% 50%);
-  }
-  80% {
-    clip-path: circle(11.2% at 50% 50%);
-  }
 
-  70% {
-    clip-path: circle(15.4% at 50% 50%);
-  }
-  60% {
-    clip-path: circle(24.3% at 50% 50%);
-  }
-  50% {
-    clip-path: circle(28.1% at 50% 50%);
-  }
-  40% {
-    clip-path: circle(31.9% at 50% 50%);
-  }
-  30% {
-    clip-path: circle(37.2% at 50% 50%);
-  }
-  20% {
-    clip-path: circle(46.4% at 50% 50%);
-  }
-  10% {
-    clip-path: circle(54% at 50% 50%);
-  }
-
-  0% {
-    clip-path: circle(70.7% at 50% 50%);
-  }
-}

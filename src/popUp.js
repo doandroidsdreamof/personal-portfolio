@@ -12,7 +12,6 @@ const turkishButton = document.querySelector('.popup__languagebuttons__türkçe'
 const expand = document.querySelector('.popup__button__expand')
 
 // Colors //
-//clip-path: circle(50% at 50% 50%);
 const buttonColor = 'rgb(33, 150, 243)';
 const popUpTopColor = 'rgb(23, 23, 23)';
 const popUpButtonColor = 'white';
@@ -29,7 +28,6 @@ languageButtons.style.display = "";
 popUpHead.style.display = "block";
 turkishButton.style.visibility = "visible";
 englishButton.style.visibility = "visible";
-popUpButton.style.animation = "circle .3s ease-in normal";
 
 
 })
@@ -48,7 +46,7 @@ languageButtons.style.display = "none";
 popUpHead.style.display = "none";
 turkishButton.style.visibility = "hidden";
 englishButton.style.visibility = "hidden";
-popUpButton.style.animation = "";
+
 })
 
 

@@ -1,6 +1,5 @@
 import "./style/style.scss";
 import "./light";
-import "./buttonAnimation";
 import "./links";
 import "./hover";
 import "./heroAnimation";

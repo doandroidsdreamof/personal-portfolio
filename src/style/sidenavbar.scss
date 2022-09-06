@@ -22,7 +22,7 @@
   }
 
   &.open {
-    height: 18rem;
+    height: 20rem;
     width: 3rem;
     transition: all 400ms ease-in-out;
     gap: 1rem;
@@ -35,7 +35,7 @@
     height: 0.8rem;
     transition: all 400ms ease-in-out;
     display: none;
-    padding: 1rem 0rem;
+    padding: 0.80rem 0rem;
     opacity: 0;
     &.openlist {
       display: inline-block;
@@ -47,11 +47,14 @@
       background-color: var(--side-nav-hover);
     }
   }
-  &__list1 {
+  &__list0 {
     background-image: url("../images/navbar-icons/sun.svg");
     &.moon {
       background-image: url("../images/navbar-icons/moon.svg");
     }
+  }
+  &__list1 {
+    background-image: url("../images/navbar-icons/translate.svg");
   }
   &__list2 {
     background-image: url("../images/navbar-icons/home.svg");

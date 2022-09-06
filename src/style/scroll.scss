@@ -4,9 +4,10 @@
     width: fit-content;
     position: fixed;
     top: 90%;
-    right: 2%;
-    transform: translate(-50%,-50%);
+    right:2%;
+    transform: translateY(-50%);
     z-index: 50;
+  
     &__up{
         color: var(--scrollup-color);
         cursor: pointer;

@@ -16,12 +16,19 @@ span {
   }
   &__head {
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 5vw;
     text-transform: none;
     color: var(--blue-color);
     transition: all 100ms ease;
-    padding: 1rem;
+    padding: 1.20rem;
     clip-path: $polygonReveal;
+    text-transform: capitalize;
+    line-height: 1.1;
+  
+    &.tr{
+      content: 'deneme bir iki bir iki deneme';
+    }
+   
   }
 
   &__text {
