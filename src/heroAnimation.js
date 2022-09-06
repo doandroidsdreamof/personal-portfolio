@@ -1,13 +1,5 @@
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
-ScrollTrigger.defaults({
-  scrub: 3,
-  ease: 'power4.inOut',
-
-
-})
 
 window.addEventListener('load',()=>{
 let tl = gsap.timeline({defaults: {ease: "power4.inOut", duration: 1}})
