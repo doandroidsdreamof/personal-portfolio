@@ -97,7 +97,7 @@ textarea {
   border-radius: 2px;
   font-family: $Inter;
   resize: none;
-  display: block;
+  display: block !important;
   width: 100%;
   box-shadow:
   inset 2px 2px 4px var(--textarea-box-shadow-first),
@@ -119,6 +119,7 @@ textarea:valid ~ label {
   -webkit-transition: all 0.425s ease;
   transition: all 0.425s ease;
   opacity: 0;
+ 
 }
 
 input:focus,
@@ -138,6 +139,8 @@ input[type="checkbox"]:checked + label {
   color: inherit;
 
 }
+
+
 // Responsive Settings //
 
 @media (max-width: 768px) {
