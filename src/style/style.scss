@@ -147,7 +147,7 @@ body {
 h1,
 h4 {
   font-weight: 500;
-  font-size: 3vw;
+  font-size: 3.50vw;
   text-transform: uppercase;
   color: var(--head-color);
   line-height: 100%;
@@ -157,6 +157,8 @@ h4 {
   transform: translateY(7rem);
   margin-bottom: 5rem;
   transition: all 400ms ease-in-out;
+  padding: 1rem;
+  
 }
 h2 {
   font-weight: 500;

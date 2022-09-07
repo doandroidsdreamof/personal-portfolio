@@ -270,32 +270,38 @@
      </main>
      <section class="section section__contact">
       <h1 class="contact__head">Contact</h1>
-        <div class="contact__border ">
+        <form class="contact__border 
+        action=”mutlukuytuoglu@gmail.com”
+        method=”POST”
+        enctype=”text/plain”
+        name=”EmailForm”>
+        
+        ">
           <div class="contact__image contact-trigger "></div>
         <div class="contact__block ">
             <div class="contact__name__block ">
               <div class="contact__name__style ">
-                <input type="text" required />
+                <input type="text" id="name" name="name"  required />
                 <label class="label__name">Name</label> 
               </div>
             </div>
             <div class="contact__email__block">
               <div class="contact__email__style ">
-                <input type="text" required />
-                <label class="label__email">Email</label> 
+                <input  name="email" type="email" required />
+                <label  id="email" class="label__email">Email</label> 
               </div>
             </div>
             <div class="ccontact__text__block ">
               <div class="contact__text__style ">
                 <textarea required></textarea>
-                <label class="label__message">Message</label>
+                <label  class="label__message">Message</label>
               </div>
             </div>
             <div class="contact__button__block">
-              <div class="contact__button__style submit send__message">Send Message</div>
+              <button type="submit" value="Send"  class="contact__button__style submit send__message">Send Message</button>
             </div>
         </div>
-        </div> 
+        </form> 
       <div class="socialmedia">
         <div class="socialmedia__container">
           <div class="socialmedia__card__content">

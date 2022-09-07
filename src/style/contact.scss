@@ -61,6 +61,7 @@
     background: transparent;
     transition: all 600ms ease-in-out;
     text-align: center;
+
     &:hover {
       background-color: var(--button-bg-hover-color);
       color: var(--button-hover-color);
@@ -132,6 +133,11 @@ input[type="checkbox"]:checked + label {
   font-style: normal;
 }
 
+.contact__button__style{
+  background: none;
+  color: inherit;
+
+}
 // Responsive Settings //
 
 @media (max-width: 768px) {
