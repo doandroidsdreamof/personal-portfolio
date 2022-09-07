@@ -1,9 +1,9 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const miniCSSExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
+    
     entry: path.resolve(__dirname, '../src/index.js'),
     output:
     {
@@ -12,11 +12,11 @@ module.exports = {
     },
     devtool: 'source-map',
     plugins:
-    [   new miniCSSExtractPlugin(),
+    [
         new CopyWebpackPlugin([ { from: path.resolve(__dirname, '../static') } ]),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../src/index.html'),
-            minify: false
+            minify: true
         })
     ],
     module:
@@ -44,7 +44,7 @@ module.exports = {
                 test: /\.css$/,
                 use:
                 [   
-                     miniCSSExtractPlugin.loader,
+                    'style-loader',
                     'css-loader'
                 ]
             },
