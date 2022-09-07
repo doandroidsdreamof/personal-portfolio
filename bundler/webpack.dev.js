@@ -4,11 +4,9 @@ const commonConfiguration = require('./webpack.common.js')
 module.exports = webpackMerge(
     commonConfiguration,
     {
-        mode: 'production',
+        mode: 'development',
         devServer:
-        
         {
-            
             host: '0.0.0.0',
             contentBase: './dist',
             open: true,
