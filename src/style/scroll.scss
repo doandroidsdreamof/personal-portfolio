@@ -24,7 +24,11 @@
     }
 }
 
-
+@media (max-width: 480px){
+        .scroll{
+                display: none;
+        }
+}
 // * Bounce animation //
 
  @-webkit-keyframes heartbeat {

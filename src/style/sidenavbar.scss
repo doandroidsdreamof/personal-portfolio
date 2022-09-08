@@ -82,32 +82,23 @@
 
   &__hamburger {
     position: relative;
-    //display: block;
     width: $buttonWidth;
     height: $buttonHeight;
     background: transparent;
     border-top: $lineThickness solid;
     border-bottom: $lineThickness solid;
-    //color: var(--hamburger-color);
     transition: all $transitionSpeed $transitionEasing;
-    //margin-bottom: 2rem;
-    //margin: 2rem;
     color: black;
     z-index: 50;
 
     &:before,
     &:after {
       content: "";
-      //display: block;
       width: 100%;
       height: $lineThickness;
       position: absolute;
-      //top: 50%;
       left: 50%;
       background-color: black;
-
-      //background-color:var(--hamburger-color);
-      //background: (--hamburger-color);
       transform: translate(-50%, -50%);
       transition: transform $transitionSpeed $transitionEasing;
     }

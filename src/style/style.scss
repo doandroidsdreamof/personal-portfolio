@@ -1,9 +1,9 @@
 @import "./hero.scss";
 @import "./variables.scss";
-@import "./projectcomponents.scss";
-@import "./skillcomponents.scss";
 @import "./animation.scss";
 @import "./popup.scss";
+@import "./projectcomponents.scss";
+@import "./skillcomponents.scss";
 @import "./contact.scss";
 @import "./scroll.scss";
 @import "./socialmedia.scss";
@@ -53,6 +53,17 @@
   --button-bg-hover-color: white;
 
   --linkedin-filter: invert(0);
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  transition: background 200ms ease-in-out;
+  display: block !important;
 }
 
 .light-mode {
@@ -119,19 +130,6 @@ html {
   background: #555;
 }
 
-body {
-  overflow-x: hidden;
-  background: var(--bg-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  font-family: "Inter", sans-serif;
-  transition: background 200ms ease-in-out;
-  display: block !important;
-
-
-}
-
 .section {
   width: 100%;
   display: grid;
@@ -139,15 +137,14 @@ body {
   scroll-snap-align: center;
   user-select: none;
   margin: auto;
-  padding: 8rem 0rem;
+  padding: 3rem 0rem;
 
 
- 
 }
 h1,
 h4 {
   font-weight: 500;
-  font-size: 3.50vw;
+  font-size: 3.5vw;
   text-transform: uppercase;
   color: var(--head-color);
   line-height: 100%;
@@ -155,10 +152,10 @@ h4 {
   margin: 0;
   clip-path: $polygonReveal;
   transform: translateY(7rem);
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   transition: all 400ms ease-in-out;
   padding: 1rem;
-  
+
 }
 h2 {
   font-weight: 500;
@@ -173,20 +170,20 @@ h2 {
   transition: all 0.2ms ease-in-out;
 }
 
-
 .languages__head {
   transform: translateY(7rem);
   margin-bottom: 5rem;
   clip-path: $polygonReveal;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
-
 
 
 // Responsive settings //
 
 @media (max-width: 720px) {
-  h1,h2,h4{
+  h1,
+  h2,
+  h4 {
     font-size: 5vw;
   }
   .languages__head {
@@ -195,34 +192,25 @@ h2 {
     clip-path: $polygonReveal;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
   }
-  
-    
+}
+
+@media (max-width: 320px) {
+  h1,
+  h2,
+  h4 {
+    font-size: 5vw;
   }
-
-  @media (max-width: 320px) {
-    h1,h2,h4{
-      font-size: 5vw;
-
-    }
-    h2{
-      margin-bottom: 2rem;
-
-    }
-    .languages__head {
-      transform: translateY(7rem);
-      clip-path: $polygonReveal;
-      margin-top: 2rem;
-      margin-bottom: 0rem;
-  
-    }
-    .section__languages{
-      padding: 12rem 0rem;
-    }
-    
-      
-    }
-  
-
-
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .languages__head {
+    transform: translateY(7rem);
+    clip-path: $polygonReveal;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+  .section__languages {
+    padding: 12rem 0rem;
+  }
+}

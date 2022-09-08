@@ -1,5 +1,7 @@
 .contact__head {
   color: var(--head-color);
+  margin-bottom: 4rem;
+
 }
 
 .contact {
@@ -13,6 +15,7 @@
   margin-bottom: 4rem;
   transition: all 20ms ease-in-out;
 
+
   &__image {
     background-image: url("../images/popup-images/contact-image.jpg");
     background-size: cover;
@@ -22,7 +25,6 @@
     height: auto;
     opacity: 0.9;
     transition: all 400ms ease-in-out;
-
     &:hover {
       opacity: 1;
     }
@@ -46,6 +48,7 @@
     border-radius: inherit;
     width: 60%;
 
+  
   }
   &__button__block {
     color: var(--button-text-color);

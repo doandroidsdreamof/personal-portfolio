@@ -27,10 +27,6 @@ span {
     clip-path: $polygonReveal;
     text-transform: capitalize;
     line-height: 1.1;
-  
-    &.tr{
-      content: 'deneme bir iki bir iki deneme';
-    }
    
   }
 
@@ -46,18 +42,22 @@ span {
 
 @media (max-width: 720px) {
   .hero__container {
-    padding: 6rem 0rem;
+    padding: 3rem 0rem;
 
     &__text {
-      font-size: 0.7rem;
+      font-size: 0.80rem;
+      
     }
     &__head {
       font-size: 8vw;
+     
+
     }
   }
 }
 @media (max-width: 320x) {
   .hero__container {
     padding: 6rem 0rem;
+  
   }
 }

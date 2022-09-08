@@ -80,7 +80,7 @@ translateButton.addEventListener('click', () => {
   const logic = bodyToggleLang.classList;
   if (logic.contains('eng')) {
     logic.replace('eng', 'tr')
-    heroHead.innerHTML = '<span>' + "Web üzerine çözüm " + '</span>' + '<br>' + "üretirim";
+    heroHead.innerHTML = '<span>' + "Web üzerine çözümler " + '</span>' + '<br>' + "üretirim";
     heroText.innerHTML = 'Merhaba, ben Berkay. Programlama üzerine yeni şeyler öğrenmekle ve problemler çözmekle haşır neşirim.';
     buttonText.innerHTML = 'Öz Geçmişi Görüntüle';
     trButtonText.innerHTML = 'Türkçe';

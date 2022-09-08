@@ -1,4 +1,3 @@
-
 .projects {
   width: 100%;
   place-items: center;
@@ -18,9 +17,6 @@
   display: none;
   color: var(--projects-card-live-color);
   margin-right: auto;
-
-
-
 }
 .projects__card {
   position: relative;
@@ -39,8 +35,8 @@
     position: relative;
     overflow: hidden;
     min-width: 100%;
-    box-shadow:  10px 10px 10px var(--card-box-shadow-first),
-    -10px -10px 10px var(--card-box-shadow-second);
+    box-shadow: 10px 10px 10px var(--card-box-shadow-first),
+      -10px -10px 10px var(--card-box-shadow-second);
   }
   &__content {
     background-color: var(--card-color);
@@ -52,10 +48,9 @@
     padding: 2rem;
     object-fit: cover;
     height: 16rem;
-    
   }
   &__texts {
-    color: var( --projects-card-container-text-color);
+    color: var(--projects-card-container-text-color);
     text-align: left;
     padding: 1.6rem 0.2rem;
     font-weight: 500;
@@ -110,7 +105,7 @@
 .projects__card__container::before {
   background: radial-gradient(
     800px circle at var(--horizontical) var(--vertical),
-    var(--card-first-effect-color),    
+    var(--card-first-effect-color),
     var(--card-second-effect-color),
     transparent 30%
   );
@@ -120,7 +115,7 @@
 .projects__card__container::after {
   background: radial-gradient(
     800px circle at var(--horizontical) var(--vertical),
-    var(--card-first-effect-color),    
+    var(--card-first-effect-color),
     var(--card-second-effect-color),
     transparent 30%
   );
@@ -157,7 +152,6 @@
     user-select: none;
     padding: 1rem;
     margin: auto;
-
   }
   .projects__card {
     position: relative;
@@ -167,9 +161,7 @@
     margin-top: 4rem;
     margin-bottom: auto;
     padding: 0rem 4rem;
-    
 
-  
     .live {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -199,15 +191,12 @@
       padding: 1rem;
       object-fit: cover;
       min-width: 100%;
-
-
     }
     &__texts {
       color: var(--projects-card-live-color);
       text-align: left;
-      padding: 1rem 0.20rem;
-      font-size: 0.80rem;
-
+      padding: 1rem 0.2rem;
+      font-size: 0.8rem;
     }
     &__image {
       align-items: center;
@@ -216,13 +205,11 @@
       overflow: hidden;
       background-size: cover;
       background-position: center;
-      padding: 0rem 9.80rem;
+      padding: 0rem 9.8rem;
     }
     &__info {
       text-align: left;
       font-size: 10px;
-      
-      
     }
   }
 }
@@ -242,7 +229,7 @@
       display: grid;
       justify-items: center;
       grid-template-columns: repeat(3, 1fr);
-      margin-top: 4rem;
+      //margin-top: 4rem;
       overflow: hidden;
     }
   }
@@ -256,17 +243,13 @@
     user-select: none;
     margin: auto;
   }
-    .projects__card {
-      display: grid;
-      justify-items: center;
-      grid-template-columns: auto;
-      margin-top: 4rem;
-      min-width: 100%;
-      padding: 0.40rem;
-      
-
-
-
+  .projects__card {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto;
+    margin-top: 4rem;
+    min-width: 100%;
+    padding: 0.4rem;
 
     &__container {
       background-color: var(--card-border-color);
@@ -274,9 +257,6 @@
       cursor: pointer;
       position: relative;
       min-height: 40%;
-   
-      
-      
     }
     &__content {
       background-color: var(--card-color);
@@ -287,8 +267,6 @@
       text-align: left;
       padding: 1rem;
       object-fit: cover;
- 
-      
     }
     &__image {
       align-items: center;
@@ -297,10 +275,7 @@
       overflow: hidden;
       background-size: cover;
       background-position: center;
-      padding: 0rem 4.80rem;
+      padding: 0rem 4.8rem;
     }
-  
   }
- 
-  }
-
+}
