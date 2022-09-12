@@ -86,7 +86,6 @@
   }
 }
 
-// Light effect //
 .projects__card__container:hover::before {
   opacity: 1;
 }
@@ -142,7 +141,7 @@
   background-image: url("../images/works-images/loop.jpg");
 }
 
-// Responsive settings //
+
 
 @media (max-width: 720px) {
   .projects {

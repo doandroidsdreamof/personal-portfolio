@@ -1,4 +1,4 @@
-// Dom Variables //
+
 const upButton = document.querySelector('.scroll__up');
 
 // Scroll Up //

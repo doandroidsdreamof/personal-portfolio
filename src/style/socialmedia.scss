@@ -1,12 +1,3 @@
-
-/*
-socialmedia projects__card
-socialmedia__container   projects__card__container
-socialmedia__card__border   projects__card__border
-socialmedia__card__content   projects__card__content
-socialmedia__card__github mediaicons        projects__card__image github 
-*/
-
 .socialmedia {
   width: 100%;
   place-items: center;
@@ -21,12 +12,9 @@ socialmedia__card__github mediaicons        projects__card__image github
   justify-content: center;
   padding: 3rem 0rem;
   transform: translateY(20%);
-  
 
-  
   &__container {
     position: relative;
-    
   }
 
   &__card__content {
@@ -42,11 +30,11 @@ socialmedia__card__github mediaicons        projects__card__image github
     border: 1px solid var(--card-border-color);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    box-shadow:  3px 3px 2px var(--card-box-shadow-first),
-    -3px -3px 2px var(--card-box-shadow-second);
-    
+    box-shadow: 3px 3px 2px var(--card-box-shadow-first),
+      -3px -3px 2px var(--card-box-shadow-second);
+
     &:hover {
-      border:  var(--blue-color) solid;
+      border: var(--blue-color) solid;
     }
   }
   &__card__github {
@@ -81,14 +69,13 @@ socialmedia__card__github mediaicons        projects__card__image github
   object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
-  
 
   &:hover {
     opacity: 0.5;
   }
 }
 
-// Responsive settings //
+
 
 @media (max-width: 720px) {
   .socialmedia {
@@ -127,7 +114,7 @@ socialmedia__card__github mediaicons        projects__card__image github
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
       flex: 1 0 50%;
-  
+
       &:hover {
         border: var(--blue-color) solid;
       }

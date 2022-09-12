@@ -1,7 +1,6 @@
 import trPdf from '../src/resume/Berkay Kuytuoğlu Öz Geçmiş.pdf'
 import engPdf from '../src/resume/Berkay Kuytuoğlu Resume.pdf'
 
-// Dom Variables //
 
 const allImageAndSvgClass = document.querySelectorAll('.link');
 const allSvg = document.querySelectorAll('.live');
@@ -48,6 +47,7 @@ allImageAndSvgClass.forEach(item => {
 
 
 // Open links projects svg//
+
 allSvg.forEach(item => {
   item.addEventListener('mouseup', (e) => {
     e.stopPropagation()

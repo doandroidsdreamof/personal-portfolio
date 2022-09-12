@@ -1,7 +1,6 @@
 .contact__head {
   color: var(--head-color);
   margin-bottom: 4rem;
-
 }
 
 .contact {
@@ -14,7 +13,6 @@
   text-align: center;
   margin-bottom: 4rem;
   transition: all 20ms ease-in-out;
-
 
   &__image {
     background-image: url("../images/popup-images/contact-image.jpg");
@@ -34,8 +32,8 @@
     position: relative;
     display: flex;
     width: 68.5%;
-    box-shadow:  10px 10px 10px var(--card-box-shadow-first),
-    -10px -10px 10px var(--card-box-shadow-second);
+    box-shadow: 10px 10px 10px var(--card-box-shadow-first),
+      -10px -10px 10px var(--card-box-shadow-second);
   }
   &__block {
     position: relative;
@@ -47,8 +45,6 @@
     object-fit: cover;
     border-radius: inherit;
     width: 60%;
-
-  
   }
   &__button__block {
     color: var(--button-text-color);
@@ -102,12 +98,10 @@ textarea {
   resize: none;
   display: block !important;
   width: 100%;
-  box-shadow:
-  inset 2px 2px 4px var(--textarea-box-shadow-first),
-  inset -2px -2px 4px var(--textarea-box-shadow-second);
-  &:focus{
-    box-shadow:
-      inset 4px 4px 4px var(--textarea-box-shadow-first),
+  box-shadow: inset 2px 2px 4px var(--textarea-box-shadow-first),
+    inset -2px -2px 4px var(--textarea-box-shadow-second);
+  &:focus {
+    box-shadow: inset 4px 4px 4px var(--textarea-box-shadow-first),
       inset -4px -4px 4px var(--textarea-box-shadow-second);
   }
 }
@@ -122,7 +116,6 @@ textarea:valid ~ label {
   -webkit-transition: all 0.425s ease;
   transition: all 0.425s ease;
   opacity: 0;
- 
 }
 
 input:focus,
@@ -131,20 +124,14 @@ textarea:focus {
   border: 1px solid var(--text-area-focus-color);
 }
 
-//  Input Attributes  //
-
 input[type="checkbox"]:checked + label {
   font-style: normal;
 }
 
-.contact__button__style{
+.contact__button__style {
   background: none;
   color: inherit;
-
 }
-
-
-// Responsive Settings //
 
 @media (max-width: 768px) {
   .contact {
@@ -231,7 +218,7 @@ input[type="checkbox"]:checked + label {
       width: 100%;
     }
     &__button__block {
-      color: var(--button-text-color);;
+      color: var(--button-text-color);
       display: flex;
       align-items: center;
       justify-content: center;

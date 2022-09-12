@@ -23,13 +23,13 @@ module.exports = {
     {
         rules:
         [
-            // HTML
+          
             {
                 test: /\.(html)$/,
                 use: ['html-loader']
             },
 
-            // JS
+           
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -39,7 +39,7 @@ module.exports = {
                 ]
             },
 
-            // CSS
+          
             {
                 test: /\.css$/,
                 use:
@@ -55,19 +55,17 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
+                
                 use: [
-                  // Creates `style` nodes from JS strings
                   "style-loader",
-                  // Translates CSS into CommonJS
                   "css-loader",
-                  // Compiles Sass to CSS
                   "sass-loader",
                 ],
               },
 
-            // Images
+        
             {
-                test: /\.(jpg|png|gif|svg)$/,
+                test: /\.(jpg|png|gif|ico|svg)$/,
                 use:
                 [
                     {

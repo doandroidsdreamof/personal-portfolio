@@ -1,5 +1,5 @@
-$Inter: "Inter", sans-serif;
-$polygonReveal: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+$font: "Inter", sans-serif;
+$reveal: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 
 span {
   color: var(--head-color);
@@ -11,7 +11,7 @@ span {
   justify-content: center;
   place-items: center;
   padding: 2rem 0rem;
-  font-family: $Inter;
+  font-family: $font;
   text-align: center;
 
   &__block {
@@ -24,7 +24,7 @@ span {
     color: var(--blue-color);
     transition: all 100ms ease;
     padding: 1.20rem;
-    clip-path: $polygonReveal;
+    clip-path: $reveal;
     text-transform: capitalize;
     line-height: 1.1;
    

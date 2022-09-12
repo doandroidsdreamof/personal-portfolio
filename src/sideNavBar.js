@@ -1,4 +1,4 @@
-// Dom Variables //
+
 const toggleButton = document.querySelector('.sidenav__hamburger');
 const openNav = document.getElementById("sidenav");
 const allItem = document.querySelectorAll('.sidenav__icons');

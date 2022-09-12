@@ -1,5 +1,4 @@
 
-// Dom //
 const popUpButton = document.querySelector('.popup__button');
 const closeButton = document.querySelector('.popup__module__line');
 const popUpText = document.querySelector('.popup__button__text');

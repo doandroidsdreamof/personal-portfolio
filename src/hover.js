@@ -1,11 +1,10 @@
-// Dom //
+
 const liveSvg = document.querySelector('.live');
 const image1 = document.getElementById('image1');
 const project1 = document.querySelector('.project1');
 const blurOne = document.querySelector('.blur');
 const allImageClass = document.querySelectorAll('.projects__card__image')
 
-// Class //
 image1.classList.add("blur");
 
 allImageClass.forEach(item => {
